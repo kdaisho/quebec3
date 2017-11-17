@@ -4,11 +4,10 @@
 @section('title', "| $titleTag")
 
 @section('content')
-{{-- <?php $ads = "<div class=\"ad\" style=\"color: red;\">Adsense here2!</div>"; ?>
-<?php $bodyText = str_replace("[adsense]", "$ads", "$post->body"); ?> --}}
 
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
+			<img src="{{ asset('images/' . $post->image) }}" alt="Featured Image">
 			<h1>{{ $post->title }}</h1>
 			<p>{!! $post->body !!}</p>
 			<hr>

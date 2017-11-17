@@ -25,9 +25,11 @@ tinymce.init({
 <div class="row">
 
 	{{-- {!! Form::model(['route' => 'posts.store']) !!} --}}
-	{!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'PUT']) !!}
+	{!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'PUT', 'files' => true]) !!}
 
 	<div class="col-md-8">
+		<img src="{{ asset('images/' . $post->image) }}" alt="Featured Image" style="display: block;">
+
 		{{ Form::label('title', 'Title:') }}
 		{{ Form::text('title', null, ['class' => 'form-control input-lg']) }}
 
@@ -39,6 +41,9 @@ tinymce.init({
 
 		{{ Form::label('tags', 'Tag:', ['class' => 'form-spacing-top']) }}
 		{{ Form::select('tags[]', $tags, null, ['class' => 'select2-multi form-control', 'multiple' => 'multiple']) }}
+
+		{{ Form::label('featured_image', 'Update Featured Image:', ['class' => 'form-spacing-top']) }}
+		{{ Form::file('featured_image') }}
 
 		{{ Form::label('body', 'Body:', ['class' => 'form-spacing-top']) }}
 		{{ Form::textarea('body', null, ['class' => 'form-control']) }}

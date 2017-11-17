@@ -15,7 +15,7 @@
 			<hr>
 			<div class="tags">
 				@foreach($post->tags as $tag)
-					<span class="label label-default">{{ $tag->name }}</span>
+					<span class="label label-success">{{ $tag->name }}</span>
 				@endforeach
 			</div>
 

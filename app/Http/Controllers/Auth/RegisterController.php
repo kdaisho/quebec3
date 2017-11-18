@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
+
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -34,9 +35,12 @@ class RegisterController extends Controller
      *
      * @return void
      */
+
+    // Disable register as 'Kyoshinhei' should be only user
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
+        // $this->middleware('guest');
     }
 
     /**

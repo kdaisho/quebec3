@@ -29,6 +29,7 @@
 							<li><a href="{{ route('posts.index') }}">Posts</a></li>
 							<li><a href="{{ route('categories.index') }}">Categories</a></li>
 							<li><a href="{{ route('tags.index') }}">Tags</a></li>
+							<li><a href="{{ route('comments.index') }}">Comments</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
 						</ul>

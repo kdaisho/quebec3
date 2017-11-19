@@ -22,6 +22,7 @@ Route::resource('categories', 'CategoryController', ['except' => ['create']]);
 Route::resource('tags', 'TagController', ['except' => ['create']]);
 
 // Comments
+Route::get('comments', ['uses' => 'CommentsController@getIndex', 'as' => 'comments.index']);
 Route::post('comments/{post_id}', ['uses' => 'CommentsController@store', 'as' => 'comments.store']);
 Route::get('comments/{id}/edit', ['uses' => 'CommentsController@edit', 'as' => 'comments.edit']);
 Route::put('comments/{id}', ['uses' => 'CommentsController@update', 'as' => 'comments.update']);

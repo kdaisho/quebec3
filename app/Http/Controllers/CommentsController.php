@@ -14,6 +14,14 @@ class CommentsController extends Controller
 		$this->middleware('auth', ['except' => 'store']);
 	}
 
+	public function getIndex() {
+        // $posts = Post::paginate(10);
+        // $comments = Comment::paginate(4);
+        $comments = Comment::all();
+        // $comments = Comment::all();
+        return view('comments.index')->with('comments', $comments);
+    }
+
 	/**
 	 * Store a newly created resource in storage.
 	 *

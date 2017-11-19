@@ -29,9 +29,9 @@ Route::put('comments/{id}', ['uses' => 'CommentsController@update', 'as' => 'com
 Route::delete('comments/{id}', ['uses' => 'CommentsController@destroy', 'as' => 'comments.destroy']);
 Route::get('comments/{id}/delete', ['uses' => 'CommentsController@delete', 'as' => 'comments.delete']);
 
-
-Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])->where('slug', '[\w\b\-\_]+');
+// Pages
 Route::get('blog', ['uses' => 'BlogController@getIndex', 'as' => 'blog.index']);
+Route::get('blog/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])->where('slug', '[\w\b\-\_]+');
 Route::get('contact', 'PagesController@getContact');
 Route::post('contact', 'PagesController@postContact');
 Route::get('about', 'PagesController@getAbout');

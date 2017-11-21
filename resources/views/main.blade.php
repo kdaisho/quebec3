@@ -9,23 +9,26 @@
 
 	<body>
 
-		@include('partials._nav')
+		<div id="app">
 
-	<div class="container">
+			@include('partials._nav')
 
-		@include('partials._messages')
+			{{-- <div> --}}
 
-		{{ (Auth::check()) ? 'Logged In' : 'Logged Out' }}
+				@include('partials._messages')
 
-		@yield('content')
 
-		@include('partials._footer')
+				@yield('content')
 
-	</div>
+				@include('partials._footer')
 
-		@include('partials._javascript')
+			{{-- </div> --}}
 
-		@yield('scripts')
+			@include('partials._javascript')
+
+			@yield('scripts')
+
+		</div>
 
 	</body>
 

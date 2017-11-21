@@ -4,13 +4,14 @@
 
 @section('content')
 
-<div class="row">
-	<div class="col-md-12">
-		<div class="jumbotron">
-			<h1 class="display-3">Welcome to my blog 3</h1>
-			<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or 
-			<p class="lead">
-				<a class="btn btn-primary btn-lg" href="#" role="button">Poplar posts</a>
+{{-- <div class="row"> --}}
+<div class="hero">
+	<div class="hero-body">
+		<div class="container">
+			<h1 class="title">Welcome to my blog 3</h1>
+			<p class="subtitle">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or 
+			<p class="subtitle">
+				<a class="button is-primary" href="#" role="button">Poplar posts</a>
 			</p>
 		</div>
 	</div>

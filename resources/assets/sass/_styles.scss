@@ -1,0 +1,23 @@
+// Nav
+.navbar.is-login {
+    background: #000;
+    span {
+        &.navbar-item {
+            color: yellow;
+        }        
+    }
+    .navbar-item {
+        background: #000;
+    }
+    a.navbar-item {
+        color: #fff;
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+// LPV
+.hero {
+    background: $brand-primary;
+}

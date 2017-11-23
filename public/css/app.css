@@ -16844,6 +16844,17 @@ label.panel-block:hover {
   background: rgba(255, 56, 96, 0.05);
 }
 
+.section .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .m-t-5 {
   margin-top: 5px !important;
 }
@@ -17250,5 +17261,15 @@ label.panel-block:hover {
 
 .hero {
   background: #3097D1;
+}
+
+.is-blog {
+  background: #8eb4cb;
+}
+
+.is-blog h1 {
+  color: #fff;
+  letter-spacing: 0.25rem;
+  text-align: center;
 }
 

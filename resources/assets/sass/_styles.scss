@@ -21,3 +21,14 @@
 .hero {
     background: $brand-primary;
 }
+
+// Blog
+.is-blog {
+    background: $brand-info;
+    h1 {
+        color: #fff;
+        // font-size: $font-size-title;
+        letter-spacing: $letter-spacing-title;
+        text-align: center;
+    }
+}

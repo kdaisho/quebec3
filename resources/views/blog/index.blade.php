@@ -17,8 +17,12 @@
 				@if($post->is_online)
 					<article class="media">
 						<figure class="media-left">
-							<p class="image is-64x64">
-								<img src="https://bulma.io/images/placeholders/128x128.png">
+							<p class="image is-128x128">
+								@if(isset($post->image))
+									<img src="images/{{ $post->image }}" alt="Featured image: {{ $post->title }}">
+								@else
+									<img src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_nikkor28-300mmf_35-56gd_ed_vr/img/sample/sample4_l.jpg" alt="featured image: general">
+								@endif
 							</p>
 						</figure>
 

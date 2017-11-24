@@ -1,34 +1,34 @@
 // Nav
 .navbar.is-login {
-    background: #000;
-    span {
-        &.navbar-item {
-            color: yellow;
-        }        
-    }
-    .navbar-item {
-        background: #000;
-    }
-    a.navbar-item {
-        color: #fff;
-        &:hover {
-            color: #000;
-        }
-    }
+	background: #000;
+	span {
+		&.navbar-item {
+			color: yellow;
+		}
+	}
+	.navbar-item {
+		background: #000;
+	}
+	a.navbar-item {
+		color: #fff;
+		&:hover {
+			color: #000;
+		}
+	}
 }
 
 // LPV
 .hero {
-    background: $brand-primary;
+	background: $brand-primary;
 }
 
 // Blog
 .is-blog {
-    background: $brand-info;
-    h1 {
-        color: #fff;
-        // font-size: $font-size-title;
-        letter-spacing: $letter-spacing-title;
-        text-align: center;
-    }
+	background: $brand-info;
+	h1 {
+		color: #fff;
+		// font-size: $font-size-title;
+		letter-spacing: $letter-spacing-title;
+		text-align: center;
+	}
 }

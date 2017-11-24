@@ -1,3 +1,3 @@
 <hr>
 
-<p class="text-center">Copyright Laravel - All Rights Reserved</p>
+<p class="has-text-centered">Copyright {{ date("Y") }} &commat;Quebec3 - All Rights Reserved</p>

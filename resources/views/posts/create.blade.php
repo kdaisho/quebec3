@@ -2,6 +2,8 @@
 
 @section('title', '| Create New Post')
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
 @section('stylesheets')
 	{!! Html::style('css/select2.min.css') !!}
 @endsection
@@ -22,45 +24,59 @@ tinymce.init({
 
 @section('content')
 
-<div class="row">
-	<div class="col-md-8 col-md-offset-2">
-		<h1>Create New Post</h1>
-		<hr>
+<div class="section container">
+	<h1>Create New Post</h1>
+	<hr>
+	<div class="column is-12">
 
-		{!! Form::open(['route' => 'posts.store', 'files' => true]) !!}
-			{{ Form::label('title', 'Title:') }}
-			{{ Form::text('title', null, array('class' => 'form-control')) }}
+		{!! Form::open(['route' => 'posts.store', 'files' => true], ['class' => 'field column is-three-fifths is-offset-one-fifth']) !!}
+			{{ Form::label('title', 'Title:', ['class' => 'label m-t-20']) }}
+			{{ Form::text('title', null, ['class' => 'input']) }}
 
-			{{ Form::label('slug', 'Slug:') }}
-			{{ Form::text('slug', null, array('class' => 'form-control')) }}
+			{{ Form::label('slug', 'Slug:', ['class' => 'label m-t-20']) }}
+			{{ Form::text('slug', null, ['class' => 'input']) }}
 
-			{{ Form::label('category', 'Category:') }}
-			<select class="form-control" name="category_id">
-				@foreach($categories as $category)
-					<option value="{{ $category->id }}">{{ $category->name }}</option>
-				@endforeach
-			</select>
+			{{ Form::label('category', 'Category:', ['class' => 'label m-t-20']) }}
+			<div class="control select">
+				<select name="category_id">
+					@foreach($categories as $category)
+						<option value="{{ $category->id }}">{{ $category->name }}</option>
+					@endforeach
+				</select>
+			</div>
 
-			{{ Form::label('tags', 'Tag:') }}
-			<select class="form-control select2-multi" name="tags[]" multiple="multiple">
-				@foreach($tags as $tag)
-					<option value="{{ $tag->id }}">{{ $tag->name }}</option>
-				@endforeach
-			</select>
+			{{ Form::label('tags', 'Tag:', ['class' => 'label m-t-20']) }}
+			<div class="control select is-fullwidth">
+				<select class="select2-multi" name="tags[]" multiple="multiple">
+					@foreach($tags as $tag)
+						<option value="{{ $tag->id }}">{{ $tag->name }}</option>
+					@endforeach
+				</select>
+			</div>
+			<div class="file m-t-40">
+				<span class="file-cta">
+					<span class="file-icon">
+						<i class="fa fa-upload"></i>
+					</span>
+					<span class="file-label">
+						{{ Form::label('featured_image', 'Upload Featured Image:', ['class' => 'file-label']) }}
+					</span>
+				</span>
+				{{ Form::file('featured_image', ['class' => 'file-input']) }}
+			</div>
 
-			{{ Form::label('featured_image', 'Upload Featured Image:') }}
-			{{ Form::file('featured_image') }}
+			{{ Form::label('body', 'Post Body:', ['class' => 'label m-t-20']) }}
+			{{ Form::textarea('body', null, ['class' => 'textarea']) }}
 
-			{{ Form::label('body', 'Post Body:') }}
-			{{ Form::textarea('body', null, array('class' => 'form-control')) }}
+			{{ Form::label('is_online', 'State', ['class' => 'label m-t-20']) }}
+			<div class="control select">
+				<select name="is_online" class="is-fullwidth">
+					<option value="0">Draft</option>
+					<option value="1" selected>Online</option>
+				</select>
+			</div>
 
-			{{ Form::label('is_online', 'State') }}
-			<select class="form-control" name="is_online">
-				<option value="0">Draft</option>
-				<option value="1" selected>Online</option>
-			</select>
-
-			{{ Form::submit('Create Post', array('class' => 'btn btn-success btn-lg btn-block', 'style' => 'margin-top: 20px;')) }}
+			{{ Form::submit('Create Post', ['class' => 'button is-success m-t-20 is-fullwidth']) }}
 		{!! Form::close() !!}
 
 	</div>
@@ -70,6 +86,7 @@ tinymce.init({
 
 @section('scripts')
 	{!! Html::script('js/select2.min.js') !!}
+
 
 	<script>
 		$('.select2-multi').select2();

@@ -44,34 +44,10 @@
 		</div>
 	</div>
 
-	<div class="">
-		<div class="">ee
-			{!! $posts->links(); !!}
-		</div>
-	</div>
 </div>
 
+<nav class="section pagination" role="navigation" aria-label="pagination">
+	{{ $posts->links() }}
+</nav>
 
-{{-- <div class="section container is-widescreen">
-	<div class="columns">
-		<div class="column">
-		@foreach ($posts as $post)
-			@if($post->is_online)
-				<h2>{{ $post->title }}</h2>
-				<h5>Published: {{ date('M j, Y', strtotime($post->created_at)) }}</h5>
-
-				<p>{!! mb_substr(strip_tags($post->body), 0, 250) !!}{{ mb_strlen($post->body) > 250 ? '...' : '' }}</p>
-
-				<a href="{{ route('blog.single', $post->slug) }}" class="btn btn-primary">Read More</a>
-				<hr>
-			@endif
-		@endforeach
-		</div>
-		<div class="column">
-			<div class="text-center">
-				{!! $posts->links(); !!}
-			</div>
-		</div>
-	</div>
-</div> --}}
 @endsection

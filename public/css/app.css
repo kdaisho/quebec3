@@ -16855,6 +16855,12 @@ label.panel-block:hover {
           justify-content: center;
 }
 
+.pagination-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .m-t-5 {
   margin-top: 5px !important;
 }

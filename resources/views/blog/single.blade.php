@@ -5,26 +5,42 @@
 
 @section('content')
 
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<img src="{{ asset('images/' . $post->image) }}" alt="Featured Image">
-			<h1>{{ $post->title }}</h1>
-			<p>{!! $post->body !!}</p>
+<section class="section">
+	<div class="container">
+		<div class="column has-offset-2" style="justify-content: center;">
+			<img class="featured-image" src="{{ asset('images/' . $post->image) }}" alt="Featured Image">
+			<h1 class="is-size-1">{{ $post->title }}</h1>
+			@foreach($post->tags as $tag)
+				<span class="tag is-success">{{ $tag->name }}</span>
+			@endforeach
+			<div class="m-t-30">
+				{!! $post->body !!}
+			</div>
 			<hr>
 			<p>Posted In: {{ $post->category->name }}</p>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<h3 class="comments-title"><span class="glyphicon glyphicon-comment"></span> {{ $post->comments()->count() }} Comments:</h3>
+	<div class="container m-to-50">
+		<div class="column is-6 is-offset-3">
+			<h3 class="is-size-3">
+				<i class="fa fa-comments m-r-10"></i> {{ $post->comments()->count() }} Comments:
+			</h3>
 			@foreach($post->comments->reverse() as $comment)
 				<div class="comment">
-					<div class="author-info">
-						<img src="{{ "https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=monsterid" }}" alt="commenter icon" class="author-image">
-						<div class="author-name">
-							<h4>{{ $comment->name }}</h4>
-							<p class="author-time">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
+					<div class="author-info columns">
+						<div class="column is-narrow">
+							<img src="{{ "https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=monsterid" }}" alt="commenter icon" class="author-image">
+						</div>
+						<div class="author-name column">
+							<h4 class="is-size-5">
+								@if(isset($comment->name))
+									{{ $comment->name }}
+								@else
+									名無しさん
+								@endif
+							</h4>
+							<p class="has-text-weight-light">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
 						</div>
 					</div>
 					<div class="comment-content">
@@ -35,29 +51,35 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div id="comment-form" class="col-md-8 col-md-offset-2" style="margin-top: 50px;">
-			{{ Form::open(['route' => ['comments.store', $post->id], 'method' => 'POST']) }}
-				<div class="row">
-					<div class="col-md-6">
-						{{ Form::label('name', 'Name:') }}
-						{{ Form::text('name', null, ['class' => 'form-control']) }}
+	<div class="container m-t-50">
+		{{-- <div id="comment-form" class="col-md-8 col-md-offset-2" style="margin-top: 50px;"> --}}
+			{{ Form::open(['route' => ['comments.store', $post->id], 'method' => 'POST', 'class' => 'form']) }}
+				<div class="column is-6 is-offset-3">
+					{{ Form::label('name', 'Name:', ['class' => 'label m-t-20']) }}
+					<div class="control has-icons-left">
+						{{ Form::text('name', null, ['class' => 'input']) }}
+						<span class="icon is-small is-left">
+							<i class="fa fa-user"></i>
+						</span>
 					</div>
 
-					<div class="col-md-6">
-						{{ Form::label('email', 'Email:') }}
-						{{ Form::text('email', null, ['class' => 'form-control']) }}
+					{{ Form::label('email', 'Email:', ['class' => 'label m-t-20']) }}
+					<div class="control has-icons-left">
+						{{ Form::text('email', null, ['class' => 'input', 'required']) }}
+						<span class="icon is-small is-left">
+							<i class="fa fa-envelope"></i>
+						</span>
 					</div>
 
-					<div class="col-md-12 btn-h1-spacing">
-						{{ Form::label('comment', 'Comment:') }}
-						{{ Form::textarea('comment', null, ['class' => 'form-control', 'rows' => '5']) }}
+					<div class="control has-icons-left">
+						{{ Form::label('comment', 'Comment:', ['class' => 'label m-t-20']) }}
+						{{ Form::textarea('comment', null, ['class' => 'textarea', 'rows' => '5', 'placeholder' => 'コメント', 'required']) }}
 
-						{{ Form::submit('Add comment', ['class' => 'btn btn-success btn-block btn-h1-spacing'])}}
+						{{ Form::submit('Add comment', ['class' => 'button is-success m-t-20 is-fullwidth'])}}
 					</div>
 				</div>
 			{{ Form::close() }}
-		</div>
+		{{-- </div> --}}
 	</div>
-
+</section>
 @endsection

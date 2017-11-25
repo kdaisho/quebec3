@@ -17279,3 +17279,8 @@ label.panel-block:hover {
   text-align: center;
 }
 
+.featured-image {
+  display: block;
+  margin: 0 auto;
+}
+

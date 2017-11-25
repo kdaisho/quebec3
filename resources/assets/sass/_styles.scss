@@ -22,7 +22,7 @@
 	background: $brand-primary;
 }
 
-// Blog
+// Blog Index
 .is-blog {
 	background: $brand-info;
 	h1 {
@@ -31,4 +31,10 @@
 		letter-spacing: $letter-spacing-title;
 		text-align: center;
 	}
+}
+
+// Blog Single
+.featured-image {
+	display: block;
+	margin: 0 auto;
 }

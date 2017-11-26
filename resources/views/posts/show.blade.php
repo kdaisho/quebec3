@@ -11,7 +11,7 @@
 
 			<img src="{{ asset('images/' . $post->image) }}" alt="Featured Image" style="display: block;">
 
-			<h1 class="is-size-1 m-t-20">{{ $post->title }}</h1>
+			<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 			<p class="lead">{!! $post->body !!}</p>
 
 			<hr>
@@ -66,9 +66,9 @@
 			</div>
 		</div>
 
-		<div class="column">
+		<div class="column is-3">
 			<div class="box">
-				<dl>
+				<dl style="overflow-x: scroll;">
 					<label>URL:</label>
 					<p><a href="{{ route('blog.single', $post->slug) }}">{{ route('blog.single', $post->slug) }}</a></p>
 				</dl>

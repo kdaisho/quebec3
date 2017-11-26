@@ -3,14 +3,23 @@
 @section('title', '| All Comments')
 
 @section('content')
-	<div class="row">
-		<div class="col-md-8">
-			<h1>Comments</h1>
+
+<section class="section container">
+
+	<h1 class="is-size-1 is-size-3-mobile">Comments</h1>
+
+	<div class="columns m-t-20">
+		<div class="column" style="overflow-x: scroll;">
+
 			<table class="table">
 				<thead>
 					<tr>
 						<th>#</th>
 						<th>Name</th>
+						<th>Email</th>
+						<th style="min-width: 180px;">Post Title</th>
+						<th>Posted at</th>
+						<th>Body</th>
 					</tr>
 				</thead>
 
@@ -18,33 +27,24 @@
 					@foreach ($comments->reverse() as $comment)
 					<tr>
 						<th>{{ $comment->id }}</th>
-						<th>{{ $comment->name }}</th>
-						<th>{{ $comment->email }}</th>
-						<th>{{ $comment->created_at }}</th>
-						<th>{{ $comment->comment }}</th>
+						<td>
+							@if(isset($comment->name))
+								{{ $comment->name }}
+							@else
+								名無しさん
+							@endif
+						</td>
+						<td>{{ $comment->email }}</td>
+						<td>{{ $comment->post->title }}</td>
+						<td>{{ date('F nS, Y g:iA', strtotime($comment->created_at)) }}</td>
+						<td>{{ $comment->comment }}</td>
 					</tr>
 					@endforeach
 				</tbody>
 			</table>
-		</div> <!-- end of .col-md-8 -->
 
-		<div class="row">
-		    <div class="col-md-12">
-		        <div class="text-center">
-		            {{-- {!! $comments->links(); !!} --}}
-		        </div>
-		    </div>
-		</div>
-
-		{{-- <div class="col-md-3">
-			<div class="well">
-				<h2>New Category</h2>
-				{!! Form::open(['route' => 'categories.store', 'method' => 'POST']) !!}
-					{{ Form::label('name', 'Name:') }}
-					{{ Form::text('name', null, ['class' => 'form-control']) }}
-					{{ Form::submit('Create New Category', ['class' => 'btn btn-primary btn-block btn-h1-spacing']) }}
-				{!! Form::close() !!}
-			</div>
-		</div> --}}
+		</div> <!-- end of .column -->
 	</div>
+
+</section>
 @endsection

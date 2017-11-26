@@ -6,13 +6,13 @@
 
 <div class="section is-blog">
 	<div class="container is-widescreen">
-		<h1 class="is-size-1">Blog</h1>
+		<h1 class="is-size-1 is-size-3-mobile">Blog</h1>
 	</div>
 </div>
 
 <div class="section container is-widescreen">
 	<div class="columns">
-		<div class="column">
+		<div class="column is-9 is-12-mobile">
 		@foreach($posts as $post)
 			@if($post->is_online)
 				<article class="media">
@@ -37,6 +37,12 @@
 				</article>
 			@endif
 		@endforeach
+		</div>
+
+		<div class="column">
+			<div class="box">
+				Subscription Form here
+			</div>
 		</div>
 	</div>
 </div>

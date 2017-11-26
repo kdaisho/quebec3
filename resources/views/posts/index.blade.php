@@ -7,7 +7,7 @@
 <div class="section container">
 
 	<div class="columns">
-		<h1 class="is-size-1 column is-narrow">All Posts</h1>
+		<h1 class="is-size-1 is-size-3-mobile column is-narrow">All Posts</h1>
 		<div class="column is-full-mobile">
 			<a href="{{ route('posts.create') }}" class="button is-primary m-t-20">Create New Post</a>
 		</div>

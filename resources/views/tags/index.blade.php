@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="section container">
-	<h1 class="is-size-1">Tags</h1>
+	<h1 class="is-size-1 is-size-3-mobile">Tags</h1>
 	<div class="columns m-t-20">
 
 		<div class="column is-three-fifths">

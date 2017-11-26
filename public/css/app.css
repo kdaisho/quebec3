@@ -17261,10 +17261,6 @@ label.panel-block:hover {
   color: #fff;
 }
 
-.navbar.is-login a.navbar-item:hover {
-  color: #000;
-}
-
 .hero {
   background: #3097D1;
 }

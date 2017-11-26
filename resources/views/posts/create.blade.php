@@ -65,7 +65,7 @@ tinymce.init({
 				{{ Form::file('featured_image', ['class' => 'file-input']) }}
 			</div>
 
-			{{ Form::label('body', 'Post Body:', ['class' => 'label m-t-20']) }}
+			{{ Form::label('body', 'Body:', ['class' => 'label m-t-20']) }}
 			{{ Form::textarea('body', null, ['class' => 'textarea']) }}
 
 			{{ Form::label('is_online', 'State', ['class' => 'label m-t-20']) }}

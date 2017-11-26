@@ -27,12 +27,12 @@
 				<i class="fa fa-comments m-r-10"></i> {{ $post->comments()->count() }} Comments:
 			</h3>
 			@foreach($post->comments->reverse() as $comment)
-				<div class="comment">
-					<div class="author-info columns">
+				<div class="comment m-t-40">
+					<div class="columns">
 						<div class="column is-narrow">
 							<img src="{{ "https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=monsterid" }}" alt="commenter icon" class="author-image">
 						</div>
-						<div class="author-name column">
+						<div class="column">
 							<h4 class="is-size-5">
 								@if(isset($comment->name))
 									{{ $comment->name }}
@@ -46,6 +46,7 @@
 					<div class="comment-content">
 						{{ $comment->comment }}
 					</div>
+					<hr>
 				</div>
 			@endforeach
 		</div>
@@ -57,7 +58,7 @@
 				<div class="column is-6 is-offset-3">
 					{{ Form::label('name', 'Name:', ['class' => 'label m-t-20']) }}
 					<div class="control has-icons-left">
-						{{ Form::text('name', null, ['class' => 'input']) }}
+						{{ Form::text('name', null, ['class' => 'input', 'placeholder' => '気が進まなきゃ空欄で。']) }}
 						<span class="icon is-small is-left">
 							<i class="fa fa-user"></i>
 						</span>
@@ -65,7 +66,7 @@
 
 					{{ Form::label('email', 'Email:', ['class' => 'label m-t-20']) }}
 					<div class="control has-icons-left">
-						{{ Form::text('email', null, ['class' => 'input', 'required']) }}
+						{{ Form::text('email', null, ['class' => 'input', 'required', 'placeholder' => 'Emailは必須。別に何かするわけじゃないけど。']) }}
 						<span class="icon is-small is-left">
 							<i class="fa fa-envelope"></i>
 						</span>
@@ -73,9 +74,9 @@
 
 					<div class="control has-icons-left">
 						{{ Form::label('comment', 'Comment:', ['class' => 'label m-t-20']) }}
-						{{ Form::textarea('comment', null, ['class' => 'textarea', 'rows' => '5', 'placeholder' => 'コメント', 'required']) }}
+						{{ Form::textarea('comment', null, ['class' => 'textarea', 'rows' => '5', 'placeholder' => 'コメントは必須だよ。', 'required']) }}
 
-						{{ Form::submit('Add comment', ['class' => 'button is-success m-t-20 is-fullwidth'])}}
+						{{ Form::submit('Add comment', ['class' => 'button is-success m-t-30 is-fullwidth'])}}
 					</div>
 				</div>
 			{{ Form::close() }}

@@ -42,8 +42,6 @@
 </div>
 
 <nav class="section pagination" role="navigation" aria-label="pagination">
-
-
 	{{ $posts->links() }}
 </nav>
 

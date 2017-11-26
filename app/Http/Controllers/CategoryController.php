@@ -69,7 +69,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::find($id);
+        return view('categories.edit')->with('category', $category);
     }
 
     /**
@@ -81,7 +82,14 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $category = Category::find($id);
+        $this->validate($request, ['name' => 'required|max:255']);
+        $category->name = $request->name;
+        $category->save();
+
+        Session::flash('success', 'successfully saved your category!');
+
+        return redirect()->route('categories.show', $category->id);
     }
 
     /**
@@ -92,6 +100,11 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category = Category::find($id);
+        $category->delete();
+
+        Session::flash('success', 'Category was deleted successfully!');
+
+        return redirect()->route('categories.index');
     }
 }

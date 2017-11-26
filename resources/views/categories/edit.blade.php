@@ -1,10 +1,10 @@
 @extends('main')
 
-@section('title', '| Edit Tag')
+@section('title', '| Edit Category')
 
 @section('content')
 
-	{!! Form::model($tag, ['route' => ['tags.update', $tag->id], 'method' => 'PUT', 'class' => 'label']) !!}
+	{!! Form::model($category, ['route' => ['categories.update', $category->id], 'method' => 'PUT', 'class' => 'label']) !!}
 
 		{{ Form::label('name', 'Title:', ['class' => 'label']) }}
 		{{ Form::text('name', null, ['class' => 'input']) }}

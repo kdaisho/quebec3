@@ -14,8 +14,8 @@
 				<thead>
 					<tr>
 						<th>#</th>
-						<th>Title</th>
-						<th>Category</th>
+						<th>Post Title</th>
+						<th>Action</th>
 						<th></th>
 					</tr>
 				</thead>
@@ -25,10 +25,6 @@
 					<tr>
 						<th>{{ $post->id }}</th>
 						<td>{{ $post->title }}</td>
-						<td>@foreach($post->tags as $category)
-							<span class="label label-default">{{ $category->name }}</span>
-							@endforeach
-						</td>
 						<td>
 							<a href="{{ route('posts.show', $post->id) }}" class="btn btn-default btn-xs">View</a>
 						</td>
@@ -40,14 +36,10 @@
 		
 		<div class="column  is-offset-1">
 			<div class="box">
-				{{-- <div class="column"> --}}
-					<a href="{{ route('tags.edit', $category->id) }}" class="button is-success is-fullwidth m-t-20">Edit</a>
-				{{-- </div> --}}
-				{{-- <div class="column"> --}}
-					{{ Form::open(['route' => ['tags.destroy', $category->id], 'method' => 'DELETE']) }}
-						{{ Form::submit('Delete', ['class' => 'button is-danger is-fullwidth m-t-20']) }}
-					{{ Form::close() }}
-				{{-- </div> --}}
+				<a href="{{ route('categories.edit', $category->id) }}" class="button is-success is-fullwidth m-t-20">Edit</a>
+				{{ Form::open(['route' => ['categories.destroy', $category->id], 'method' => 'DELETE']) }}
+					{{ Form::submit('Delete', ['class' => 'button is-danger is-fullwidth m-t-20']) }}
+				{{ Form::close() }}
 			</div>
 		</div>
 	</div>

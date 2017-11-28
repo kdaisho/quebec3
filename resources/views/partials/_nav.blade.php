@@ -27,9 +27,9 @@
 @endif
 <nav class="navbar has-shadow">
 	<div class="container">
-		<div class="navbar-brand" style="background: yellow;">
+		<div class="navbar-brand">
 			<a class="navbar-item is-tab" href="{{ url('/') }}">
-				Quebec3
+				<img src="{{ asset('images/logo.svg') }}" alt="Quebec3 logo">
 			</a>
 			<div class="button navbar-burger" data-target="navMenu">
 				<span></span>

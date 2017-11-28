@@ -1,0 +1,19 @@
+@mixin breakpoint($value) {
+	@if $value == "small" {
+		@media (min-width: 768px) {
+			@content;
+		}
+	}
+
+	@else if $value == "medium" {
+		@media (min-width: 1024px) {
+			@content;
+		}
+	}
+
+	@else if $value == "large" {
+		@media (min-width: 1201px) {
+			@content;
+		}
+	}
+}

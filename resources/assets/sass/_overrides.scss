@@ -7,5 +7,12 @@
 	justify-content: center;
 }
 .is-login .navbar-item.is-active {
-    border-color: #fff;
+	border-color: #fff;
+}
+
+.navbar-item img {
+	max-height: 2rem;
+	@include breakpoint(medium) {
+		max-height: 3.5rem;
+	}
 }

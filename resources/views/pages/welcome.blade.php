@@ -6,7 +6,7 @@
 
 <div class="hero">
 	<div class="hero-body">
-		<div class="container is-widescreen">
+		<div class="container is-widescreen has-text-centered">
 			<h1 class="title">Welcome to my blog 3</h1>
 			<p class="subtitle">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or 
 			<p class="subtitle">

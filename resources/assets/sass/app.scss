@@ -1,14 +1,18 @@
-// Variables
-@import "variables";
-
 // Mixin
 @import "mixin";
 
 // Font Awesome
 @import "node_modules/font-awesome/scss/font-awesome";
 
+// Variables
+@import "node_modules/bulma/sass/utilities/initial-variables";
+@import "variables";
+
+// @import "node_modules/bulma/sass/utilities/functions";
+
 // Bulma
 @import "node_modules/bulma/bulma";
+
 
 // Bulma Vue Modules
 @import "node_modules/buefy/src/scss/buefy";

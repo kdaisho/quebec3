@@ -16875,6 +16875,30 @@ label.panel-block:hover {
   }
 }
 
+.navbar-item {
+  color: white;
+}
+
+.navbar-item.is-tab.is-active {
+  border-bottom-color: white;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  background: #0890fb;
+}
+
+.navbar-burger {
+  background: #0890fb;
+  border: none;
+}
+
+.navbar-burger span {
+  height: 2px;
+  color: white;
+}
+
 .m-t-5 {
   margin-top: 5px !important;
 }
@@ -17275,8 +17299,8 @@ label.panel-block:hover {
   color: #fff;
 }
 
-.hero {
-  background: #3097D1;
+.navbar {
+  background: #0890fb;
 }
 
 .is-blog {

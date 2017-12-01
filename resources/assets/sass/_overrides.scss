@@ -1,3 +1,9 @@
+.button.is-primary {
+	background: $brand-primary;
+	&:visited {
+		background: $brand-primary;
+	}
+}
 .section .columns {
 	display: flex;
 	flex-wrap: wrap;
@@ -9,22 +15,6 @@
 .is-login .navbar-item.is-active {
 	border-color: #fff;
 }
-
-.navbar-item img {
-	max-height: 2rem;
-	@include breakpoint(medium) {
-		max-height: 3.5rem;
-	}
-}
-
-.navbar-item {
-	color: $white;
-	&.is-tab.is-active {
-		border-bottom-color: $white;
-		color: $white;
-		font-weight: bold;
-	}
-}
 .navbar-menu {
 	background: $brand-primary;
 }
@@ -34,5 +24,5 @@
 }
 .navbar-burger span {
 	height: 2px;
-	color: $white;
+	color: #fff;
 }

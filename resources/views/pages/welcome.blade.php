@@ -4,31 +4,32 @@
 
 @section('content')
 
+{{-- <div class="heroer" style="background: blue url('../images/quebec3-hero.jpg') no-repeat center;"> --}}
 <div class="hero">
 	<div class="hero-body">
 		<div class="container is-widescreen has-text-centered">
-			<h1 class="title">Welcome to my blog 3</h1>
-			<p class="subtitle">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or 
+			<h1 class="has-text-white title is-size-1 m-b-30">Quebec3</h1>
+			<p class="subtitle has-text-white">- 海外移住ポータル -</p>
 			<p class="subtitle">
-				<a class="button is-primary" href="#" role="button">Poplar posts</a>
+				<a class="button is-primary" href="#" role="button">全記事見る</a>
 			</p>
 		</div>
 	</div>
 </div>
 
-<div class="section container" style="background: yellow;">
+<div class="section container">
 	<div class="columns">
 
-		<div class="column is-9 is-12-mobile">
+		<div class="column is-12-mobile m-b-30">
 			@foreach($posts as $post)
 				@if($post->is_online)
 					<article class="media">
 						<figure class="media-left">
 							<span class="image is-128x128">
 								@if(isset($post->image))
-									<img src="images/{{ $post->image }}" alt="Featured image: {{ $post->title }}">
+									<img src="/images/{{ $post->image }}" alt="Featured image: {{ $post->title }}">
 								@else
-									<img src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_nikkor28-300mmf_35-56gd_ed_vr/img/sample/sample4_l.jpg" alt="featured image: general">
+									<img src="/images/profile.jpg" alt="featured image: general">
 								@endif
 							</span>
 						</figure>
@@ -45,28 +46,34 @@
 			@endforeach
 		</div>
 
-		<div class="column is-3 is-6-mobile">
-			<div class="card">
+		<div class="column is-3" style="max-width: 256px;">
+			<div class="card" >
 				<div class="card-image">
-					<figure class="image is-4by3">
-						<img src="https://bulma.io/images/placeholders/128x128.png" alt="Placeholder image">
+					<figure class="image is-256x256">
+						<img src="/images/profile-2.jpg" alt="Placeholder image">
 					</figure>
 				</div>
 				<div class="card-content">
 					<div class="media">
 						<div class="media-content">
-							<h3 class="title">This person writes.</h3>
+							<h2 class="title is-size-5">この人が<br>書いてます。</h2>
 						</div>
 					</div>
 					<div class="content">
-						<p>blaf blah blah blaf blah blah blaf blah blah blaf blah blah blaf blah blah</p>
-						<a href="{{ url('about') }}" class="button is-primary">About Kyoshin</a>
+						<h3 class="is-size-4">Kyoshin-hei</h3>
+						<p>2010年よりモントリオール在住のカナダ市民権保持者。<br>元陸自のWeb屋さん。<br>カレー好き。</p>
+						<a href="{{ url('about') }}" class="button is-primary">About Me</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
 	</div><!-- End of .columns -->
+
+	<div class="m-t-50">
+		<h2 class="has-text-centered is-size-2 is-size-3">ご質問・ご意見あればどーぞ。</h2>
+		@include('partials._form')
+	</div>
 </div>
 
 @endsection

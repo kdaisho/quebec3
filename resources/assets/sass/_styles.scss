@@ -1,35 +1,37 @@
-// Nav
-.navbar.is-login {
-	background: #000;
-	span {
-		&.navbar-item {
-			color: yellow;
-		}
-	}
-	.navbar-item {
-		background: #000;
-	}
-	a.navbar-item {
-		color: #fff;
-	}
-}
-.navbar {
+@import "styles/nav";
+
+// General Selectors
+.is-bg-quebec3 {
 	background: $brand-primary;
+	color: #fff;
+}
+.is-text-quebec3 {
+	color: $brand-primary;
 }
 
 // LPV
 .hero {
-	// background: $brand-primary;
+	background: $brand-primary url("/images/quebec3-hero.jpg") no-repeat center;
 }
 
 // Blog Index
 .is-blog {
-	background: $brand-info;
+	background: $brand-primary url("/images/blog-bg-2.jpg") no-repeat center;
 	h1 {
 		color: #fff;
-		// font-size: $font-size-title;
 		letter-spacing: $letter-spacing-title;
 		text-align: center;
+	}
+}
+
+.is-200x200 {
+	height: auto;
+	width: 200px;
+}
+.media {
+	flex-wrap: wrap;
+	@include breakpoint(small) {
+		flex-wrap: nowrap;
 	}
 }
 

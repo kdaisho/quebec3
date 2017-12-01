@@ -16844,6 +16844,14 @@ label.panel-block:hover {
   background: rgba(255, 56, 96, 0.05);
 }
 
+.button.is-primary {
+  background: #0890fb;
+}
+
+.button.is-primary:visited {
+  background: #0890fb;
+}
+
 .section .columns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16865,26 +16873,6 @@ label.panel-block:hover {
   border-color: #fff;
 }
 
-.navbar-item img {
-  max-height: 2rem;
-}
-
-@media (min-width: 1024px) {
-  .navbar-item img {
-    max-height: 3.5rem;
-  }
-}
-
-.navbar-item {
-  color: white;
-}
-
-.navbar-item.is-tab.is-active {
-  border-bottom-color: white;
-  color: white;
-  font-weight: bold;
-}
-
 .navbar-menu {
   background: #0890fb;
 }
@@ -16896,7 +16884,7 @@ label.panel-block:hover {
 
 .navbar-burger span {
   height: 2px;
-  color: white;
+  color: #fff;
 }
 
 .m-t-5 {
@@ -17303,14 +17291,74 @@ label.panel-block:hover {
   background: #0890fb;
 }
 
+a.navbar-item {
+  color: #fff;
+  line-height: 2.25;
+}
+
+a.navbar-item.is-tab:hover {
+  background: #fff;
+  color: #3273dc;
+}
+
+a.navbar-item.is-tab.is-active {
+  background: #fff;
+  border: none;
+  color: #3273dc;
+}
+
+a.navbar-item.is-logo:hover {
+  background: initial;
+}
+
+a.navbar-item.is-logo img {
+  max-height: 2rem;
+}
+
+@media (min-width: 1024px) {
+  a.navbar-item.is-logo img {
+    max-height: 3rem;
+  }
+}
+
+.is-bg-quebec3 {
+  background: #0890fb;
+  color: #fff;
+}
+
+.is-text-quebec3 {
+  color: #0890fb;
+}
+
+.hero {
+  background: #0890fb url("/images/quebec3-hero.jpg") no-repeat center;
+}
+
 .is-blog {
-  background: #8eb4cb;
+  background: #0890fb url("/images/blog-bg-2.jpg") no-repeat center;
 }
 
 .is-blog h1 {
   color: #fff;
   letter-spacing: 0.25rem;
   text-align: center;
+}
+
+.is-200x200 {
+  height: auto;
+  width: 200px;
+}
+
+.media {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .media {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .featured-image {

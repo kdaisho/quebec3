@@ -28,7 +28,7 @@
 <nav class="navbar has-shadow">
 	<div class="container">
 		<div class="navbar-brand">
-			<a class="navbar-item is-tab" href="{{ url('/') }}">
+			<a class="navbar-item is-logo" href="{{ url('/') }}">
 				<img src="{{ asset('images/logo-blanc.svg') }}" alt="Quebec3 logo">
 			</a>
 			<div class="button navbar-burger" data-target="navMenu">
@@ -40,16 +40,16 @@
 
 		<div class="navbar-menu navbar-end" id="navMenu">
 			<a class="{{ Request::is('/') ? "is-active" : ""}} navbar-item is-tab" href="{{ url('/') }}">
-				Home
+				ホーム
 			</a>
 			<a class="{{ Request::is('blog') ? "is-active" : ""}} navbar-item is-tab" href="{{ route('blog.index') }}">
-				Blog
+				ブログ一覧
 			</a>
 			<a class="{{ Request::is('about') ? "is-active" : ""}} navbar-item is-tab" href="{{ url('about') }}">
-				About
+				Quebec3について
 			</a>
 			<a class="{{ Request::is('contact') ? "is-active" : ""}} navbar-item is-tab" href="{{ url('contact') }}">
-				Contact
+				コンタクト
 			</a>
 		</div>
 	</div>

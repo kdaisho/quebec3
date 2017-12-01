@@ -8,7 +8,7 @@
 <section class="section">
 	<div class="container">
 		<div class="column has-offset-2" style="justify-content: center;">
-			<img class="featured-image" src="{{ asset('images/' . $post->image) }}" alt="Featured Image">
+			<img class="featured-image" src="{{ asset('images/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 			<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 			@foreach($post->tags as $tag)
 				<span class="tag is-success">{{ $tag->name }}</span>

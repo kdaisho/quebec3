@@ -19,7 +19,7 @@
 					<figure class="media-left">
 						<p class="image is-200x200 m-b-15">
 							@if(isset($post->image))
-								<img src="images/{{ $post->image }}" alt="Featured image: {{ $post->title }}">
+								<img src="images/{{ $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
 							@else
 								<img src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_nikkor28-300mmf_35-56gd_ed_vr/img/sample/sample4_l.jpg" alt="featured image: general">
 							@endif

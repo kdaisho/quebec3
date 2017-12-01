@@ -11,6 +11,7 @@ use Session;
 use Purifier;
 use Image;
 use Storage;
+use File;
 
 class PostController extends Controller
 {
@@ -72,15 +73,29 @@ class PostController extends Controller
 		$post->body = Purifier::clean($request->body, 'youtube');
 
 		if($request->hasFile('featured_image')) {
-			$image = $request->file('featured_image');
-			$filename = time() . '.' . $image->getClientOriginalExtension();
-			$location = public_path('images/') . $filename;
-			// Image::make($image)->resize(640, null)->save($location);
-			Image::make($image)->resize(640, null, function ($constraint) {
-				$constraint->aspectRatio();
-			})->save($location);
+			$types = ['-original.', '-thumb.'];
+			// Width and height for thumb and resized
+			$sizes = [['128', '128']];
+			$targetPath = 'images/';
 
-			$post->image = $filename;
+			$image = $request->file('featured_image');
+			$filename = time() . '.' . $image->getClientOriginalName();
+			$ext =  $image->getClientOriginalExtension();
+			$nameWithOutExt = str_replace('.' . $ext, '', $filename);
+			$original = $nameWithOutExt . array_shift($types) . $ext;
+			$image->move($targetPath, $original); // Move the original one first
+
+			foreach ($types as $key => $type) {
+				// Copy and move (thumb, resized)
+				$newName = $nameWithOutExt . $type . $ext;
+				File::copy($targetPath . $original, $targetPath . $newName);
+				Image::make($targetPath . $newName)
+				->crop($sizes[$key][0], $sizes[$key][1])
+				->save($targetPath . $newName);
+			}
+
+			$post->image = $nameWithOutExt;
+
 		}
 
 		$post->save();
@@ -141,26 +156,15 @@ class PostController extends Controller
 	{
 		$post = Post::find($id);
 
-		//Validate the data
-		// if ($request->input('slug') == $post->slug) {
-		//     $this->validate($request, array(
-		//         'title' => 'required|max:255',
-		//         'category_id' => 'required|integer',
-		//         'is_online' => 'required|numeric',
-		//         'body' => 'required'
-		//     ));
-		// } else {
-			$this->validate($request, array(
-				'title' => 'required|max:255',
-				'slug' => "required|alpha_dash|min:5|max:255|unique:posts,slug,$id",
-				'category_id' => 'required|integer',
-				'is_online' => 'required|numeric',
-				'body' => 'required',
-				'featured_image' => 'image'
-			));
-		// }
+		$this->validate($request, array(
+			'title' => 'required|max:255',
+			'slug' => "required|alpha_dash|min:5|max:255|unique:posts,slug,$id",
+			'category_id' => 'required|integer',
+			'is_online' => 'required|numeric',
+			'body' => 'required',
+			'featured_image' => 'image'
+		));
 
-		
 
 		//Save the data to the database
 		$post = Post::find($id);
@@ -172,21 +176,37 @@ class PostController extends Controller
 		$post->body = Purifier::clean($request->body, 'youtube');
 
 		if($request->hasFile('featured_image')) {
-			// Add the new image
-            $image = $request->file('featured_image');
-            $filename = time() . '.' . $image->getClientOriginalExtension();
-            $location = public_path('images/') . $filename;
-            // Image::make($image)->resize(640, null)->save($location);
-            Image::make($image)->resize(640, null, function ($constraint) {
-				$constraint->aspectRatio();
-			})->save($location);
 
-            $oldFilename = $post->image;
-            // Update the database
-            $post->image = $filename;
-            // Delete the image
-            Storage::delete($oldFilename);
-        }
+			$types = ['-original.', '-thumb.'];
+			// Width and height for thumb and resized
+			$sizes = [['128', '128']];
+			$targetPath = 'images/';
+
+			$image = $request->file('featured_image');
+			$filename = time() . '.' . $image->getClientOriginalName();
+			$ext =  $image->getClientOriginalExtension();
+			$nameWithOutExt = str_replace('.' . $ext, '', $filename);
+			$original = $nameWithOutExt . array_shift($types) . $ext;
+			$image->move($targetPath, $original); // Move the original one first
+
+			foreach ($types as $key => $type) {
+				// Copy and move (thumb, resized)
+				$newName = $nameWithOutExt . $type . $ext;
+				File::copy($targetPath . $original, $targetPath . $newName);
+				Image::make($targetPath . $newName)
+				->crop($sizes[$key][0], $sizes[$key][1])
+				->save($targetPath . $newName);
+			}
+
+			$oldFilename[0] = $post->image . '-original.jpg';
+			$oldFilename[1] = $post->image . '-thumb.jpg';
+			// Update the database
+			$post->image = $nameWithOutExt;
+			// Delete the image
+			for ($i = 0; $i < 2; $i++) {
+				Storage::delete($oldFilename[$i]);
+			}
+		}
 
 
 		$post->save();

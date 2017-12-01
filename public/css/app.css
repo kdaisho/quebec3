@@ -17334,11 +17334,11 @@ a.navbar-item.is-logo img {
   background: #0890fb url("/images/quebec3-hero.jpg") no-repeat center;
 }
 
-.is-blog {
+.is-hero-gen {
   background: #0890fb url("/images/blog-bg-2.jpg") no-repeat center;
 }
 
-.is-blog h1 {
+.is-hero-gen h1 {
   color: #fff;
   letter-spacing: 0.25rem;
   text-align: center;

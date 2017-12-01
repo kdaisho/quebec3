@@ -49,7 +49,7 @@
 				Quebec3について
 			</a>
 			<a class="{{ Request::is('contact') ? "is-active" : ""}} navbar-item is-tab" href="{{ url('contact') }}">
-				コンタクト
+				接触を試みる
 			</a>
 		</div>
 	</div>

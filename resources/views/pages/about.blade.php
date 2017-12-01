@@ -6,7 +6,7 @@
 
 <div class="section is-hero-gen">
 	<div class="container is-widescreen">
-		<h1 class="title is-size-1 is-size-3-mobile">Quebec3について</h1>
+		<h1 class="title is-size-1 is-size-3-mobile">Quebec3とは</h1>
 	</div>
 </div>
 

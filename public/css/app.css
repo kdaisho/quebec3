@@ -17330,6 +17330,12 @@ a.navbar-item.is-logo img {
   color: #0890fb;
 }
 
+@media (min-width: 768px) {
+  .visible-small {
+    display: none;
+  }
+}
+
 .hero {
   background: #0890fb url("/images/quebec3-hero.jpg") no-repeat center;
 }

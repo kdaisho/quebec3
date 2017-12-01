@@ -46,7 +46,7 @@
 				ブログ一覧
 			</a>
 			<a class="{{ Request::is('about') ? "is-active" : ""}} navbar-item is-tab" href="{{ url('about') }}">
-				Quebec3について
+				Quebec3とは
 			</a>
 			<a class="{{ Request::is('contact') ? "is-active" : ""}} navbar-item is-tab" href="{{ url('contact') }}">
 				接触を試みる

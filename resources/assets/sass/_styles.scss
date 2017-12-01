@@ -8,6 +8,11 @@
 .is-text-quebec3 {
 	color: $brand-primary;
 }
+.visible-small {
+	@include breakpoint(small) {
+		display: none;
+	}
+}
 
 // LPV
 .hero {

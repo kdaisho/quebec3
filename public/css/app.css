@@ -16891,6 +16891,16 @@ label.panel-block:hover {
   color: #fff;
 }
 
+.message {
+  left: 50%;
+  min-width: 250px;
+  position: absolute;
+  top: 20px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 1000;
+}
+
 .m-t-5 {
   margin-top: 5px !important;
 }

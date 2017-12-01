@@ -17,7 +17,7 @@
 			@if($post->is_online)
 				<article class="media">
 					<figure class="media-left">
-						<p class="image is-200x200 m-b-15">
+						<p class="image is-128x128 m-b-15">
 							@if(isset($post->image))
 								<img src="images/{{ $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
 							@else

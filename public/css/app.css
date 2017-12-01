@@ -16873,6 +16873,10 @@ label.panel-block:hover {
   border-color: #fff;
 }
 
+.is-login .navbar-menu {
+  background: #000;
+}
+
 .navbar-menu {
   background: #0890fb;
 }
@@ -17348,11 +17352,6 @@ a.navbar-item.is-logo img {
   color: #fff;
   letter-spacing: 0.25rem;
   text-align: center;
-}
-
-.is-200x200 {
-  height: auto;
-  width: 200px;
 }
 
 .media {

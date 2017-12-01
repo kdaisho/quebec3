@@ -25,7 +25,7 @@
 						<figure class="media-left">
 							<span class="image is-128x128">
 								@if(isset($post->image))
-									<img src="/images/{{ $post->image }}" alt="Featured image: {{ $post->title }}">
+									<img src="/images/{{ $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
 								@else
 									<img src="/images/profile.jpg" alt="featured image: general">
 								@endif

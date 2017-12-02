@@ -89,8 +89,9 @@ class PostController extends Controller
 				// Copy and move (thumb, resized)
 				$newName = $nameWithOutExt . $type . $ext;
 				File::copy($targetPath . $original, $targetPath . $newName);
-				Image::make($targetPath . $newName)
-				->crop($sizes[$key][0], $sizes[$key][1])
+				Image::make($targetPath . $newName)->resize(null, 128, function ($constraint) {
+					$constraint->aspectRatio();
+				})->crop($sizes[$key][0], $sizes[$key][1])
 				->save($targetPath . $newName);
 			}
 
@@ -193,8 +194,9 @@ class PostController extends Controller
 				// Copy and move (thumb, resized)
 				$newName = $nameWithOutExt . $type . $ext;
 				File::copy($targetPath . $original, $targetPath . $newName);
-				Image::make($targetPath . $newName)
-				->crop($sizes[$key][0], $sizes[$key][1])
+				Image::make($targetPath . $newName)->resize(null, 128, function ($constraint) {
+					$constraint->aspectRatio();
+				})->crop($sizes[$key][0], $sizes[$key][1])
 				->save($targetPath . $newName);
 			}
 

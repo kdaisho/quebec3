@@ -1,9 +1,10 @@
 @if (Session::has('success'))
-<div class="container">
+<?php $closeBtn = true; ?>
+<div class="container message-container">
 	<div class="message is-success" role="alert">
 		<div class="message-header">
 			<p>Success:</p>
-			<button class="delete" aria-label="delete"></button>
+			<button class="delete" onclick="closeMsg()" aria-label="delete"></button>
 		</div>
 		<div class="message-body">
 			{{ Session::get('success') }}
@@ -13,11 +14,11 @@
 @endif
 
 @if (count($errors) > 0)
-<div class="container">
+<div class="container message-container">
 	<div class="message is-danger" role="alert">
 		<div class="message-header">
 			<p>Errors:</p>
-			<button class="delete" aria-label="delete"></button>
+			<button class="delete" onclick="closeMsg()" aria-label="delete"></button>
 		</div>
 		<div class="message-body">
 			<ul>
@@ -29,3 +30,12 @@
 	</div>
 </div>
 @endif
+
+
+<script>
+function closeMsg() {
+var msgContainer = document.getElementsByClassName("message-container"),
+	msg =  document.getElementsByClassName("message");
+	msgContainer[0].removeChild(msg[0]);
+}
+</script>

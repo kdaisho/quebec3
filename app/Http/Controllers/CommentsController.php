@@ -47,7 +47,7 @@ class CommentsController extends Controller
 
 		$comment->save();
 
-		Session::flash('success', 'Comment was added');
+		Session::flash('success', 'コメントupされました。');
 
 		return redirect()->route('blog.single', [$post->slug]);
 	}

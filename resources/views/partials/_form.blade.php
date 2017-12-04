@@ -1,4 +1,4 @@
-<form action="{{ url('contact') }}" method="POST" class="field column is-6 is-offset-3">
+<form action="{{ url('contact') }}" method="POST" class="field column is-10 is-offset-1">
 	{{ csrf_field() }}
 
 	<label class="label m-t-20" for="email" name="email">メールアドレス:</label>
@@ -28,7 +28,7 @@
 
 	<label class="label m-t-20" for="message" name="message">メッセージ:</label>
 	<div class="control has-icons-left">
-		<textarea id="message" name="message" class="textarea"></textarea>
+		<textarea id="message" name="message" class="textarea" rows="7"></textarea>
 		<p id="errorMsgText" class="help is-danger" style="display: none;">
 			"<span id="textRes"></span>" って言われても...この欄もうちょっと書いてもらわないと困る。
 		</p>

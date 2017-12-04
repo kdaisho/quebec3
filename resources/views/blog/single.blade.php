@@ -3,17 +3,30 @@
 <?php $titleTag = htmlspecialchars($post->title); ?>
 @section('title', "| $titleTag")
 
+<?php $desc = ""; ?>
+
+@foreach($post->tags as $tag)
+	<?php $desc .=  $tag->name .', '; ?>
+@endforeach
+
+@section('desc', "$desc")
+
 @section('content')
 
 <section class="section">
 	<div class="container">
-		<div class="column has-offset-2" style="justify-content: center;">
+		<div class="column has-offset-2">
 			<img class="featured-image" src="{{ asset('images/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
-			<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
-			@foreach($post->tags as $tag)
-				<span class="tag is-success">{{ $tag->name }}</span>
-			@endforeach
-			<div class="m-t-30">
+			<div class="has-text-centered">
+				<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
+				<p class="has-text-weight-light m-b-10">{{ date('Y年 m月d日 g:i A',  strtotime($post->created_at)) }}</p>
+
+				@foreach($post->tags as $tag)
+					<span class="tag is-success">{{ $tag->name }}</span>
+				@endforeach
+			</div>
+
+			<div class="column is-desktop m-t-30 is-8 is-offset-2">
 				{!! $post->body !!}
 			</div>
 			<hr>
@@ -22,13 +35,13 @@
 	</div>
 
 	<div class="container m-to-50">
-		<div class="column is-6 is-offset-3">
+		<div class="column is-8 is-offset-2">
 			<h3 class="is-size-3">
 				<i class="fa fa-comments m-r-10"></i> {{ $post->comments()->count() }} Comments:
 			</h3>
 			@foreach($post->comments->reverse() as $comment)
 				<div class="comment m-t-40">
-					<div class="columns">
+					<div class="columns is-mobile">
 						<div class="column is-narrow">
 							<img src="{{ "https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=monsterid" }}" alt="commenter icon" class="author-image">
 						</div>
@@ -40,7 +53,7 @@
 									名無しさん
 								@endif
 							</h4>
-							<p class="has-text-weight-light">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
+							<p class="has-text-weight-light is-size-6 is-size-7-mobile">{{ date('Y年 m月d日 g:i A',  strtotime($comment->created_at)) }}</p>
 						</div>
 					</div>
 					<div class="comment-content">

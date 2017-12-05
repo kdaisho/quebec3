@@ -1,4 +1,7 @@
-<form action="{{ url('contact') }}" method="POST" class="field column is-10 is-offset-1">
+<h2 class="title has-text-centered is-size-3 is-size-5-mobile">ご質問・ご意見あればどーぞ。</h2>
+<p class="has-text-centered">ここにメッセージをぶち込むと速攻で管理人宛にメールが届きます。</p>
+
+<form action="{{ url('contact') }}" method="POST" class="field">
 	{{ csrf_field() }}
 
 	<label class="label m-t-20" for="email" name="email">メールアドレス:</label>

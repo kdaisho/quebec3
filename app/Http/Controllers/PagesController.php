@@ -11,7 +11,7 @@ use Session;
 class PagesController extends Controller {
 
 	public function getIndex() {
-		$posts = Post::orderBy('id', 'desc')->take(4)->get();
+		$posts = Post::orderBy('id', 'desc')->take(6)->get();
 		return view('pages.welcome')->with('posts', $posts);
 	}
 

@@ -1,51 +1,55 @@
 @extends('main')
 
-@section('title', "| $tag->name Tag")
+<?php $titleTag = htmlspecialchars($tag->name); ?>
+
+@section('title', "| $titleTag")
 
 @section('content')
-	<div class="row">
-		<div class="col-md-8">
-			<h1>{{ $tag->name }} Tag <small>{{ $tag->posts()->count() }} Posts</small></h1>
-		</div>
-		<div class="col-md-2">
-			<a href="{{ route('tags.edit', $tag->id) }}" class="btn btn-primary btn-block pull-right btn-h1-spacing">Edit</a>
-		</div>
-		<div class="col-md-2">
-			{{ Form::open(['route' => ['tags.destroy', $tag->id], 'method' => 'DELETE']) }}
-				{{ Form::submit('Delete', ['class' => 'btn btn-danger btn-block btn-h1-spacing']) }}
-			{{ Form::close() }}
+
+<section class="section">
+
+	<div class="container has-text-centered">
+			<div>
+				<h1 class="title is-size-1 is-size-3-mobile">{{ $tag->name }} Tag <small>{{ $tag->posts()->count() }} Posts</small></h1>
+			</div>
+			<div class="columns m-t-20">
+				<a href="{{ route('tags.edit', $tag->id) }}" class="button is-primary m-r-5">Edit</a>
+				{{ Form::open(['route' => ['tags.destroy', $tag->id], 'method' => 'DELETE']) }}
+					{{ Form::submit('Delete', ['class' => 'button is-danger m-l-5']) }}
+				{{ Form::close() }}
+			</div>
 		</div>
 	</div>
 
-	<div class="row">
-		<col-md-12>
-			<table class="table">
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>Title</th>
-						<th>Tags</th>
-						<th></th>
-					</tr>
-				</thead>
+	<div class="container column is-8 is-offset-2">
+		<table class="table is-fullwidth">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Title</th>
+					<th>Tags</th>
+					<th>Action</th>
+				</tr>
+			</thead>
 
-				<tbody>
-					@foreach($tag->posts as $post)
-					<tr>
-						<th>{{ $post->id }}</th>
-						<td>{{ $post->title }}</td>
-						<td>@foreach($post->tags as $tag)
-							<span class="label label-default">{{ $tag->name }}</span>
-							@endforeach
-						</td>
-						<td>
-							<a href="{{ route('posts.show', $post->id) }}" class="btn btn-default btn-xs">View</a>
-						</td>
-					</tr>
-					@endforeach
-				</tbody>
-			</table>
-		</col-md-12>
+			<tbody>
+				@foreach($tag->posts as $post)
+				<tr>
+					<th>{{ $post->id }}</th>
+					<td>{{ $post->title }}</td>
+					<td>@foreach($post->tags as $tag)
+						<span class="label label-default">{{ $tag->name }}</span>
+						@endforeach
+					</td>
+					<td>
+						<a href="{{ route('posts.show', $post->id) }}" class="button">View Post</a>
+					</td>
+				</tr>
+				@endforeach
+			</tbody>
+		</table>
 	</div>
+
+</section>
 
 @endsection

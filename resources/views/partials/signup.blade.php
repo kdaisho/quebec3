@@ -4,7 +4,7 @@
 	<p class="is-size-7 m-t-5 has-text-weight-bold">メールアドレスが他の目的で使用されることは断じてないです。ハイ。</p>
 	<form action="//quebec3.us11.list-manage.com/subscribe/post?u=a9b3dcc0985f0772454a9bc96&amp;id=0fd7be20c8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		<div id="mc_embed_signup_scroll">
-			<label class="label m-t-20 has-text-white" for="mce-EMAIL">Email:</label>
+			<label class="label m-t-20 has-text-white" for="mce-EMAIL">メールアドレス:</label>
 			<input type="email" value="" name="EMAIL" class="email input" id="mce-EMAIL" placeholder="example@gmail.com" required>
 			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			<div style="position: absolute; left: -5000px;">

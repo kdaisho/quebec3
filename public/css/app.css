@@ -17381,3 +17381,57 @@ a.navbar-item.is-logo img {
   margin: 0 auto;
 }
 
+.pipe {
+  background: #ccc;
+  height: 50%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+}
+
+.link {
+  position: relative;
+}
+
+.link .link-item {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link .link-item__prev,
+.link .link-item__next {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: block;
+  width: 100%;
+}
+
+.link .link-item__prev {
+  padding-left: 20px;
+}
+
+.link .link-item__prev i {
+  left: 2%;
+}
+
+.link .link-item__next {
+  padding-right: 20px;
+}
+
+.link .link-item__next i {
+  right: 2%;
+}
+
+.link .arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+

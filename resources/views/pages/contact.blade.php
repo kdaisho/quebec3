@@ -11,7 +11,7 @@
 </section>
 
 <seciton class="section container">
-	<div class="column is-8 is-offset-2">
+	<div class="column is-6 is-offset-3">
 		<p class="is-size-5 is-size-6-mobile">
 			質問や意見があればお気軽にどうぞ。
 		</p>

@@ -15,7 +15,7 @@
 
 <section class="section">
 	<div class="container columns">
-		<div class="column is-8 has-offset-2">
+		<div class="column is-8 is-offset-2">
 			<img class="featured-image" src="{{ asset('images/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 			<div class="has-text-centered">
 				<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
@@ -35,7 +35,7 @@
 		</div>
 	</div>
 
-	<div class="container m-to-50">
+	<div class="container columns m-to-50">
 		<div class="column is-8 is-offset-2">
 			<h3 class="is-size-3">
 				<i class="fa fa-comments m-r-10"></i> コメント {{ $post->comments()->count() }}

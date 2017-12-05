@@ -16,8 +16,7 @@
 <section class="section">
 	<div class="container columns">
 		<div class="column is-8 is-offset-2">
-			{{-- <img class="featured-image" src="{{ asset('images/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}"> --}}
-			<img class="featured-image" src="{{ asset('images/' . $post->image) }}" alt="Featured Image: {{ $post->title }}">
+			<img class="featured-image" src="{{ asset('images/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 			<div class="has-text-centered">
 				<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 				<p class="has-text-weight-light m-b-10">{{ date('Y年 m月d日 g:i A',  strtotime($post->created_at)) }}</p>

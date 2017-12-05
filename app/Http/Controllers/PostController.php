@@ -76,36 +76,37 @@ class PostController extends Controller
 			$types = ['-original.', '-thumb.'];
 			// Width and height for thumb and resized
 			$sizes = [['128', '128']];
-			$targetPath = 'images/';
+			$targetPath = '/images/';
 
 			$image = $request->file('featured_image');
-			$filename = time() . '.' . $image->getClientOriginalExtension();
-			$location = public_path('images/') . $filename;
-			// Image::make($image)->resize(640, null)->save($location);
-			Image::make($image)->resize(640, null, function ($constraint) {
-			$constraint->aspectRatio();
-			})->save($location);
 
-			$post->image = $filename;
+			// $filename = time() . '.' . $image->getClientOriginalExtension();
+			// $location = public_path('images/') . $filename;
+			// // Image::make($image)->resize(640, null)->save($location);
+			// Image::make($image)->resize(640, null, function ($constraint) {
+			// $constraint->aspectRatio();
+			// })->save($location);
 
-			
-			// $filename = time() . '.' . $image->getClientOriginalName();
-			// $ext =  $image->getClientOriginalExtension();
-			// $nameWithOutExt = str_replace('.' . $ext, '', $filename);
-			// $original = $nameWithOutExt . array_shift($types) . $ext;
-			// $image->move($targetPath, $original); // Move the original one first
+			// $post->image = $filename;
 
-			// foreach ($types as $key => $type) {
-			// 	// Copy and move (thumb, resized)
-			// 	$newName = $nameWithOutExt . $type . $ext;
-			// 	File::copy($targetPath . $original, $targetPath . $newName);
-			// 	Image::make($targetPath . $newName)->resize(null, 128, function ($constraint) {
-			// 		$constraint->aspectRatio();
-			// 	})->crop($sizes[$key][0], $sizes[$key][1])
-			// 	->save($targetPath . $newName);
-			// }
 
-			// $post->image = $nameWithOutExt;
+			$filename = time() . '.' . $image->getClientOriginalName();
+			$ext =  $image->getClientOriginalExtension();
+			$nameWithOutExt = str_replace('.' . $ext, '', $filename);
+			$original = $nameWithOutExt . array_shift($types) . $ext;
+			$image->move($targetPath, $original); // Move the original one first
+
+			foreach ($types as $key => $type) {
+				// Copy and move (thumb, resized)
+				$newName = $nameWithOutExt . $type . $ext;
+				File::copy($targetPath . $original, $targetPath . $newName);
+				Image::make($targetPath . $newName)->resize(null, 128, function ($constraint) {
+					$constraint->aspectRatio();
+				})->crop($sizes[$key][0], $sizes[$key][1])
+				->save($targetPath . $newName);
+			}
+
+			$post->image = $nameWithOutExt;
 
 		}
 

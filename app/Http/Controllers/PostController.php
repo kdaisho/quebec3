@@ -76,7 +76,7 @@ class PostController extends Controller
 			$types = ['-original.', '-thumb.'];
 			// Width and height for thumb and resized
 			$sizes = [['128', '128']];
-			$targetPath = public_path('images/');
+			$targetPath = public_path() . 'images/';
 
 			$image = $request->file('featured_image');
 

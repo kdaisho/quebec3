@@ -7,17 +7,12 @@
 <section class="section is-hero-gen">
 	<div class="container is-widescreen">
 		<h1 class="title is-size-1 is-size-3-mobile">接触を試みる</h1>
+		<p class="has-text-white has-text-centered is-size-5 is-size-6-mobile text-bg">管理人に文句や褒め言葉を送ることができます。</p>
 	</div>
 </section>
 
-<seciton class="section container">
-	<div class="column is-6 is-offset-3">
-		<p class="is-size-5 is-size-6-mobile">
-			質問や意見があればお気軽にどうぞ。
-		</p>
-
-		<hr>
-
+<section class="section container">
+	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet">
 		@include('partials._form')
 	</div>
 </section>

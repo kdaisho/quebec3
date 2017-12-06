@@ -7,6 +7,7 @@
 <div class="section is-hero-gen">
 	<div class="container is-widescreen">
 		<h1 class="title is-size-1 is-size-3-mobile">ブログ一覧</h1>
+		<p class="has-text-white has-text-centered is-size-5 is-size-6-mobile text-bg">全ての記事がここに。熱心な読者様向けに新着記事通知サービスもやってます。</p>
 	</div>
 </div>
 

@@ -17350,6 +17350,12 @@ a.navbar-item.is-logo img {
   }
 }
 
+.text-bg {
+  background: rgba(0, 0, 0, 0.5);
+  display: table;
+  margin: 0 auto;
+}
+
 .hero {
   background: #0890fb url("/images/quebec3-hero.jpg") no-repeat center;
 }

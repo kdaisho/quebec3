@@ -80,16 +80,6 @@ class PostController extends Controller
 
 			$image = $request->file('featured_image');
 
-			// $filename = time() . '.' . $image->getClientOriginalExtension();
-			// $location = public_path('images/') . $filename;
-			// // Image::make($image)->resize(640, null)->save($location);
-			// Image::make($image)->resize(640, null, function ($constraint) {
-			// $constraint->aspectRatio();
-			// })->save($location);
-
-			// $post->image = $filename;
-
-
 			$filename = time() . '.' . $image->getClientOriginalName();
 			$ext =  $image->getClientOriginalExtension();
 			$nameWithOutExt = str_replace('.' . $ext, '', $filename);
@@ -192,7 +182,7 @@ class PostController extends Controller
 			$types = ['-original.', '-thumb.'];
 			// Width and height for thumb and resized
 			$sizes = [['128', '128']];
-			$targetPath = 'images/';
+			$targetPath = public_path() . '/images/';
 
 			$image = $request->file('featured_image');
 			$filename = time() . '.' . $image->getClientOriginalName();

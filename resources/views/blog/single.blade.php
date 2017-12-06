@@ -115,6 +115,12 @@
 				<i class="arrow fa fa-chevron-left m-r-10"></i>{{ $previous->title }}
 			</a>
 		</div>
+		@else
+		<div class="column is-6 has-text-centered link-item">
+			<a class="link-item__next"  href="{{ route('blog.index') }}">
+				記事一覧へ戻る
+			</a>
+		</div>
 		@endif
 
 		<div class="pipe"></div>
@@ -123,6 +129,12 @@
 		<div class="column is-6 has-text-centered link-item">
 			<a class="link-item__next"  href="{{ url('blog/' . $next->slug) }}">
 				{{ $next->title }}<i class="arrow fa fa-chevron-right m-l-10"></i>
+			</a>
+		</div>
+		@else
+		<div class="column is-6 has-text-centered link-item">
+			<a class="link-item__next"  href="{{ route('blog.index') }}">
+				記事一覧へ戻る
 			</a>
 		</div>
 		@endif

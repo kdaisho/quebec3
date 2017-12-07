@@ -17340,6 +17340,14 @@ a.navbar-item.is-logo img {
   color: #fff;
 }
 
+.is-bg-purple {
+  background: #536dfe;
+}
+
+.is-bg-yellow {
+  background: #ffeb3b;
+}
+
 .is-text-quebec3 {
   color: #0890fb;
 }
@@ -17354,6 +17362,10 @@ a.navbar-item.is-logo img {
   background: rgba(0, 0, 0, 0.5);
   display: table;
   margin: 0 auto;
+}
+
+.no-wrap {
+  display: inline-block;
 }
 
 .hero {

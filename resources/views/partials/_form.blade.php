@@ -1,5 +1,5 @@
-<h2 class="title has-text-centered is-size-3 is-size-5-mobile">ご質問・ご意見あればどーぞ。</h2>
-<p class="has-text-centered">ここにメッセージをぶち込むと速攻で管理人宛にメールが届きます。</p>
+<h2 class="title has-text-centered is-size-3 is-size-5-mobile">ご質問・ご意見あれば<span class="no-wrap">どーぞ。</span></h2>
+<p class="has-text-centered">ここにメッセージをぶち込むと速攻で<span class="no-wrap">管理人</span>宛に<span class="no-wrap">メール</span>が<span class="no-wrap">届きます。</span></p>
 
 <form action="{{ url('contact') }}" method="POST" class="field">
 	{{ csrf_field() }}

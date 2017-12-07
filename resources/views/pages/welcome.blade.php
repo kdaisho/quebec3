@@ -76,7 +76,7 @@
 					</div>
 					<div class="content">
 						<h3 class="is-size-4">Kyoshin</h3>
-						<p>2010年よりモントリオール在住のカナダ市民権保持者。<br>元陸自のWeb屋さん。<br>カレー好き。</p>
+						<p>2010年より<span class="no-wrap">モントリオール</span>在住の<span class="no-wrap">カナダ市民権</span><span class="no-wrap">保持者。</span><br>元陸自の<span class="no-wrap">Web屋</span><span class="no-wrap">さん。</span><br>カレー好き。</p>
 						<a href="{{ url('about') }}" class="button is-primary">詳しく見る</a>
 					</div>
 				</div>

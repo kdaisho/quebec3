@@ -5,6 +5,12 @@
 	background: $brand-primary;
 	color: #fff;
 }
+.is-bg-purple {
+	background: #536dfe;
+}
+.is-bg-yellow {
+	background: #ffeb3b;
+}
 .is-text-quebec3 {
 	color: $brand-primary;
 }
@@ -17,6 +23,9 @@
 	background: rgba(0,0,0,.5);
 	display: table;
 	margin: 0 auto;
+}
+.no-wrap {
+	display: inline-block;
 }
 
 // LPV

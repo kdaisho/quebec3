@@ -4,10 +4,10 @@
 
 @section('content')
 
-<div class="section is-hero-gen">
+<div class="section is-bg-purple has-text-centered">
 	<div class="container is-widescreen">
-		<h1 class="title is-size-1 is-size-3-mobile">ブログ一覧</h1>
-		<p class="has-text-white has-text-centered is-size-5 is-size-6-mobile text-bg">全ての記事がここに。熱心な読者様向けに新着記事通知サービスもやってます。</p>
+		<h1 class="title is-size-1 is-size-3-mobile has-text-white">ブログ一覧</h1>
+		<p class="has-text-white has-text-centered is-size-5 is-size-6-mobile text-bg">new! 記事にコメントを残せるようになりました。また、<span class="no-wrap">熱心な読者様向けに</span><span class="no-wrap">新着記事通知サービスも</span>やってます。</p>
 	</div>
 </div>
 

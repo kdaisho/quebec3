@@ -1,5 +1,5 @@
 <div id="mc_embed_signup">
-	<h3 class="is-size-5 has-text-weight-bold"">まだやってます<br>新着記事通知サービス</h3>
+	<h3 class="is-size-5 has-text-weight-bold"">まだやってます<br>新着記事通知<span class="no-wrap">サービス</span></h3>
 	<p class="m-t-10">ここにあなたのメールアドレスをぶち込んでおけば、記事が更新された際お知らせのメールが届きます。</p>
 	<p class="is-size-7 m-t-5 has-text-weight-bold">メールアドレスが他の目的で使用されることは断じてないです。ハイ。</p>
 	<form action="//quebec3.us11.list-manage.com/subscribe/post?u=a9b3dcc0985f0772454a9bc96&amp;id=0fd7be20c8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

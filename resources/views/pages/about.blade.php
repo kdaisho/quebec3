@@ -4,10 +4,10 @@
 
 @section('content')
 
-<section class="section is-hero-gen">
+<section class="section is-bg-yellow has-text-centered">
 	<div class="container is-widescreen">
 		<h1 class="title is-size-1 is-size-3-mobile">Quebec3とは</h1>
-		<p class="has-text-white has-text-centered is-size-5 is-size-6-mobile text-bg">Quebec3は海外脱出を目指す日本人のためのブログです。</p>
+		<p class="has-text-white has-text-centered is-size-5 is-size-6-mobile text-bg">Quebec3は日本脱出を目指す<span class="no-wrap">日本人の</span><span class="no-wrap">ための</span><span class="no-wrap">ブログです。</span></p>
 	</div>
 </section>
 

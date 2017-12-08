@@ -27,6 +27,9 @@
 			</div>
 
 			<div class="is-desktop m-t-30">
+				{{-- in-article ads --}}
+				{{-- @include('partials._ads-inarticle') --}}
+
 				{!! $post->body !!}
 			</div>
 			<hr>

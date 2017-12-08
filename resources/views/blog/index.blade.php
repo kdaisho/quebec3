@@ -16,22 +16,12 @@
 		<div class="column is-9 is-12-mobile m-b-30">
 		@foreach($posts as $post)
 			@if($post->is_online)
-				@if($post->id % 3 == 0 )
-					{{ 'ads' }}
+
+				@if($post->id % 4 == 0 )
+					{{-- in-feed ads --}}
+					{{-- @include('partials._ads-infeed') --}}
 				@endif
 
-				{{-- @if ($post->id % 3 = 0) //If the value of "count" equals 3 or 6 or 9 insert the ad
-				{
-					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-					</script>
-					<ins class="adsbygoogle" style="display:block"
-					data-ad-format="fluid"
-					data-ad-client="ca-pub-1234567891234567"
-					data-ad-slot="1234567890"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				} --}}
 				<article class="media">
 					<figure class="media-left">
 						<p class="image is-128x128 m-b-15">

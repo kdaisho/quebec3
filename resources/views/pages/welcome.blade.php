@@ -33,6 +33,12 @@
 		<div class="column is-12-mobile m-b-30">
 			@foreach($posts as $post)
 				@if($post->is_online)
+
+					@if($post->id % 4 == 0 )
+						{{-- in-feed ads --}}
+						{{-- @include('partials._ads-infeed') --}}
+					@endif
+
 					<article class="media">
 						<figure class="media-left">
 							<span class="image is-128x128">
@@ -86,9 +92,7 @@
 
 	<hr>
 
-	{{-- <div class="m-t-50 columns"> --}}
 	<div class="m-t-50">
-		{{-- <div class="is-8 is-offset-2"> --}}
 		<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet">
 			@include('partials._form')
 		</div>

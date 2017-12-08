@@ -21,6 +21,8 @@
 
 			@include('partials._javascript')
 
+			@include('partials._analytics')
+
 			@yield('scripts')
 
 		</div>

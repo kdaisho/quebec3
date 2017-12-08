@@ -18,7 +18,7 @@
 		<h3 class="title is-size-4">管理人</h3>
 		<img src="/images/profile-landscape.jpg" alt="Kyoshin-heiのプロファイル">
 		<h3 class="title is-size-4">Kyoshin</h3>
-		<p class="is-size-5 is-size-6-mobile m-b-10">日本生まれ日本育ち。2002年から2009年まで陸上自衛隊にて幹部として勤務。32歳になって生まれて初めて海外旅行を経験。<br>陸自退官後の2010年にカナダへ移住（と言いつつ観光ビザで上陸）。<br>ラッキーなことにそのままカナダ永住権取得したので{{ date("Y") }}年現在まで居座ることになる。</p>
+		<p class="is-size-6 m-b-10">日本生まれ日本育ち。2002年から2009年まで陸上自衛隊にて幹部として勤務。32歳になって生まれて初めて海外旅行を経験。<br>陸自退官後の2010年にカナダへ移住（と言いつつ観光ビザで上陸）。<br>ラッキーなことにそのままカナダ永住権取得したので{{ date("Y") }}年現在まで居座ることになる。</p>
 
 		<h6 class="title is-size-4 m-t-30">FAQ: よくある質問</h6>
 		<p><span class="icon"><i class="has-text-success fa fa-question"></i></span>なんでカナダに移住したんですか？</p>

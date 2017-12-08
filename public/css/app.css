@@ -17404,9 +17404,16 @@ a.navbar-item.is-logo img {
   }
 }
 
-.sign-up {
-  border: solid #536dfe;
-  border-width: 16px 2px;
+.signup-title {
+  background: #0890fb;
+  border-radius: 5px 5px 0 0;
+  padding: .75rem .5rem;
+}
+
+.signup-contents {
+  border: solid #0890fb;
+  border-radius: 0 0 5px 5px;
+  border-width: 0 2px 2px;
 }
 
 .is-bg-quebec3 {

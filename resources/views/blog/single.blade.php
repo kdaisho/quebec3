@@ -91,7 +91,7 @@
 
 			<div class="control has-icons-left">
 				<label for="comment" class="label m-t-20"><span class="has-text-danger">*</span>コメント:</label>
-				{{ Form::textarea('comment', null, ['id' => 'comment', 'class' => 'textarea', 'rows' => '5', 'placeholder' => 'ここには何か書いて下さい。']) }}
+				{{ Form::textarea('comment', null, ['id' => 'comment', 'class' => 'textarea', 'rows' => '5']) }}
 				<p id="errorMsgText" class="help is-danger" style="display: none;">
 					この欄は必須と言ったでしょう。
 				</p>

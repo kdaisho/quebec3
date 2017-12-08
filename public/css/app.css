@@ -17416,6 +17416,10 @@ a.navbar-item.is-logo img {
   border-width: 0 2px 2px;
 }
 
+.is-sns {
+  min-width: 260px;
+}
+
 .is-bg-quebec3 {
   background: #0890fb;
   color: #fff;

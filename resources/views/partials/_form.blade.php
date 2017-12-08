@@ -33,7 +33,10 @@
 	<div class="control has-icons-left">
 		<textarea id="message" name="message" class="textarea" rows="7"></textarea>
 		<p id="errorMsgText" class="help is-danger" style="display: none;">
-			"<span id="textRes"></span>" って言われても...この欄もうちょっと書いてもらわないと困る。
+			この欄は必須ですって。
+		</p>
+		<p id="errorMsgTextTooShort" class="help is-danger" style="display: none;">
+			"<span id="textRes"></span>" って言われても...もう少し書きましょうよ。
 		</p>
 	</div>
 
@@ -51,11 +54,11 @@ document.getElementById("submit").addEventListener("click", function(event) {
 		subjectValue = document.getElementById("subject").value,
 		textInput = document.getElementById("message"),
 		textValue = document.getElementById("message").value,
-
-		errorMsgEmail = document.getElementById("errorMsgEmail");
-		errorMsgEmailValidate = document.getElementById("errorMsgEmailValidate");
-		errorMsgSubject = document.getElementById("errorMsgSubject");
+		errorMsgEmail = document.getElementById("errorMsgEmail"),
+		errorMsgEmailValidate = document.getElementById("errorMsgEmailValidate"),
+		errorMsgSubject = document.getElementById("errorMsgSubject"),
 		errorMsgText = document.getElementById("errorMsgText");
+		errorMsgTextTooShort = document.getElementById("errorMsgTextTooShort");
 
 	setDefault();
 	validateEmail(emailValue);
@@ -70,7 +73,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
 		emailInput.className = "input";
 		subjectInput.className = "input";
 		textInput.className = "textarea";
-		errorMsgEmail.style.display = errorMsgEmailValidate.style.display = errorMsgSubject.style.display = errorMsgText.style.display = "none";
+		errorMsgEmail.style.display = errorMsgEmailValidate.style.display = errorMsgSubject.style.display = errorMsgText.style.display = errorMsgTextTooShort.style.display = "none";
 	}
 
 	function validateEmail(em, event) {
@@ -107,9 +110,15 @@ document.getElementById("submit").addEventListener("click", function(event) {
 	function validateText() {
 		resOutput = document.getElementById("textRes");
 		textValue = textValue.trim();
-		if (textValue.length <= 10) {
-			resOutput.innerHTML = textValue;
+		if (textValue.length === 0) {
 			errorMsgText.style.display = "block";
+			textInput.className = "textarea is-danger";
+			error = true;
+			return false;
+		}
+		else if (textValue.length != 0 && textValue.length <= 10) {
+			resOutput.innerHTML = textValue;
+			errorMsgTextTooShort.style.display = "block";
 			textInput.className = "textarea is-danger";
 			error = true;
 			return false;

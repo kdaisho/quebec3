@@ -4,7 +4,6 @@
 
 @section('content')
 
-{{-- <div class="heroer" style="background: blue url('../images/quebec3-hero.jpg') no-repeat center;"> --}}
 <div class="hero">
 	<div class="hero-body">
 		<div class="container is-widescreen has-text-centered">
@@ -38,7 +37,7 @@
 						<figure class="media-left">
 							<span class="image is-128x128">
 								@if(isset($post->image))
-									<img src="/images/{{ $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
+									<img src="/images/{{ $post->slug . '/' . $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
 								@else
 									<img src="/images/profile.jpg" alt="featured image: general">
 								@endif

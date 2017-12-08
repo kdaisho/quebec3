@@ -66,6 +66,7 @@ class PostController extends Controller
 			'featured_image' => 'sometimes|image'
 		));
 
+		$post->id = $request->id;
 		$post->title = $request->title;
 		$post->slug = $request->slug;
 		$post->category_id = $request->category_id;
@@ -76,7 +77,10 @@ class PostController extends Controller
 			$types = ['-original.', '-thumb.'];
 			// Width and height for thumb and resized
 			$sizes = [['128', '128']];
-			$targetPath = public_path() . '/images/';
+			$postPath = public_path() . '/images/' . $post->slug .'/';
+			File::makeDirectory($postPath, 0755, true);
+			
+			$targetPath = $postPath;
 
 			$image = $request->file('featured_image');
 
@@ -182,7 +186,7 @@ class PostController extends Controller
 			$types = ['-original.', '-thumb.'];
 			// Width and height for thumb and resized
 			$sizes = [['128', '128']];
-			$targetPath = public_path() . '/images/';
+			$targetPath = public_path() . '/images/' . $post->slug . '/';
 
 			$image = $request->file('featured_image');
 			$filename = time() . '.' . $image->getClientOriginalName();

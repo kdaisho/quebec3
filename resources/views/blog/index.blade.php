@@ -7,7 +7,7 @@
 <div class="section is-bg-purple has-text-centered">
 	<div class="container is-widescreen">
 		<h1 class="title is-size-1 is-size-3-mobile has-text-white">ブログ一覧</h1>
-		<p class="has-text-white has-text-centered is-size-5 is-size-6-mobile text-bg">new! 記事にコメントを残せるようになりました。また、<span class="no-wrap">熱心な読者様向けに</span><span class="no-wrap">新着記事通知サービスも</span>やってます。</p>
+		<p class="has-text-white has-text-centered is-size-5 is-size-6-mobile text-bg">new! 記事にコメントを残せるようになりました。<span class="no-wrap">熱心な読者様向けに</span><span class="no-wrap">新着記事通知サービスも</span>やってます。</p>
 	</div>
 </div>
 
@@ -20,7 +20,7 @@
 					<figure class="media-left">
 						<p class="image is-128x128 m-b-15">
 							@if(isset($post->image))
-								<img src="images/{{ $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
+								<img src="images/{{ $post->slug . '/' . $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
 							@else
 								<img src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_nikkor28-300mmf_35-56gd_ed_vr/img/sample/sample4_l.jpg" alt="featured image: general">
 							@endif
@@ -41,7 +41,7 @@
 		</div>
 
 		<div class="column">
-			<div class="box is-bg-quebec3">
+			<div class="box sign-up">
 				{{-- Signup Form --}}
 				@include('partials.signup')
 			</div>

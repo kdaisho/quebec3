@@ -1,6 +1,9 @@
 // Nav
 .navbar.is-login {
 	background: #000;
+	.navbar-burger {
+		background: #000;
+	}
 	span {
 		&.navbar-item {
 			color: yellow;
@@ -15,12 +18,25 @@
 }
 .navbar {
 	background: $brand-primary;
+	.navbar-menu {
+		padding: 0;
+	}
 }
 
 a.navbar-item {
 	color: #fff;
 	line-height: 2.25;
 	&.is-tab {
+		border-bottom: 1px solid #fff;
+		&:first-child {
+			border-top: 1px solid #fff;
+		}
+		@include breakpoint(medium) {
+			border-bottom: none;
+			&:first-child {
+				border-top: none;
+			}
+		}
 		&:hover {
 			background: #fff;
 			color: #3273dc;

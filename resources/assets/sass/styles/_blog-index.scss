@@ -1,0 +1,18 @@
+.is-hero-gen {
+	background: $brand-primary url("/images/blog-bg-2.jpg") no-repeat center;
+	h1 {
+		color: #fff;
+		letter-spacing: $letter-spacing-title;
+		text-align: center;
+	}
+}
+.media {
+	flex-wrap: wrap;
+	@include breakpoint(small) {
+		flex-wrap: nowrap;
+	}
+}
+.sign-up {
+	border: solid $brand-purple;
+	border-width: 16px 2px; 
+}

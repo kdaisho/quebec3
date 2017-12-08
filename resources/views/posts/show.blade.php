@@ -9,7 +9,7 @@
 
 		<div class="column is-9">
 
-			<img src="{{ asset('images/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
+			<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 
 			<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 			<p class="lead">{!! $post->body !!}</p>

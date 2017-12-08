@@ -17285,7 +17285,23 @@ label.panel-block:hover {
   padding-right: 100px !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  font-family: "\30E1\30A4\30EA\30AA", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
 .navbar.is-login {
+  background: #000;
+}
+
+.navbar.is-login .navbar-burger {
   background: #000;
 }
 
@@ -17305,9 +17321,31 @@ label.panel-block:hover {
   background: #0890fb;
 }
 
+.navbar .navbar-menu {
+  padding: 0;
+}
+
 a.navbar-item {
   color: #fff;
   line-height: 2.25;
+}
+
+a.navbar-item.is-tab {
+  border-bottom: 1px solid #fff;
+}
+
+a.navbar-item.is-tab:first-child {
+  border-top: 1px solid #fff;
+}
+
+@media (min-width: 1024px) {
+  a.navbar-item.is-tab {
+    border-bottom: none;
+  }
+
+  a.navbar-item.is-tab:first-child {
+    border-top: none;
+  }
 }
 
 a.navbar-item.is-tab:hover {
@@ -17335,6 +17373,42 @@ a.navbar-item.is-logo img {
   }
 }
 
+.footer {
+  background: #0890fb;
+  padding: 3rem 1.5rem 5rem;
+}
+
+.footer .logo {
+  width: 200px;
+}
+
+.is-hero-gen {
+  background: #0890fb url("/images/blog-bg-2.jpg") no-repeat center;
+}
+
+.is-hero-gen h1 {
+  color: #fff;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+
+.media {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .media {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.sign-up {
+  border: solid #536dfe;
+  border-width: 16px 2px;
+}
+
 .is-bg-quebec3 {
   background: #0890fb;
   color: #fff;
@@ -17358,6 +17432,12 @@ a.navbar-item.is-logo img {
   }
 }
 
+@media (min-width: 1024px) {
+  .visible-medium {
+    display: none;
+  }
+}
+
 .text-bg {
   background: rgba(0, 0, 0, 0.5);
   display: table;
@@ -17370,28 +17450,6 @@ a.navbar-item.is-logo img {
 
 .hero {
   background: #0890fb url("/images/quebec3-hero.jpg") no-repeat center;
-}
-
-.is-hero-gen {
-  background: #0890fb url("/images/blog-bg-2.jpg") no-repeat center;
-}
-
-.is-hero-gen h1 {
-  color: #fff;
-  letter-spacing: 0.25rem;
-  text-align: center;
-}
-
-.media {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media (min-width: 768px) {
-  .media {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
 }
 
 .featured-image {

@@ -1,4 +1,7 @@
+@import "styles/font";
 @import "styles/nav";
+@import "styles/footer";
+@import "styles/blog-index";
 
 // General Selectors
 .is-bg-quebec3 {
@@ -6,16 +9,21 @@
 	color: #fff;
 }
 .is-bg-purple {
-	background: #536dfe;
+	background: $brand-purple;
 }
 .is-bg-yellow {
-	background: #ffeb3b;
+	background: $brand-yellow;
 }
 .is-text-quebec3 {
 	color: $brand-primary;
 }
 .visible-small {
 	@include breakpoint(small) {
+		display: none;
+	}
+}
+.visible-medium {
+	@include breakpoint(medium) {
 		display: none;
 	}
 }
@@ -31,23 +39,6 @@
 // LPV
 .hero {
 	background: $brand-primary url("/images/quebec3-hero.jpg") no-repeat center;
-}
-
-// Blog Index
-.is-hero-gen {
-	background: $brand-primary url("/images/blog-bg-2.jpg") no-repeat center;
-	h1 {
-		color: #fff;
-		letter-spacing: $letter-spacing-title;
-		text-align: center;
-	}
-}
-
-.media {
-	flex-wrap: wrap;
-	@include breakpoint(small) {
-		flex-wrap: nowrap;
-	}
 }
 
 // Blog Single

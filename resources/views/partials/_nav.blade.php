@@ -40,16 +40,16 @@
 
 		<div class="navbar-menu navbar-end" id="navMenu">
 			<a class="{{ Request::is('/') ? "is-active" : ""}} navbar-item is-tab" href="{{ url('/') }}">
-				ホーム
+				<i class="visible-medium is-text-white is-size-6 m-r-10 fa fa-home"></i> ホーム
 			</a>
 			<a class="{{ Request::is('blog') ? "is-active" : ""}} navbar-item is-tab" href="{{ route('blog.index') }}">
-				ブログ一覧
+				 <i class="visible-medium is-text-white is-size-6 m-r-10 fa fa-newspaper-o"></i> ブログ一覧
 			</a>
 			<a class="{{ Request::is('about') ? "is-active" : ""}} navbar-item is-tab" href="{{ url('about') }}">
-				Quebec3とは
+				<i class="visible-medium is-text-white is-size-6 m-r-10 fa fa-cog fa-spin"></i> Quebec3とは
 			</a>
 			<a class="{{ Request::is('contact') ? "is-active" : ""}} navbar-item is-tab" href="{{ url('contact') }}">
-				接触を試みる
+				 <i class="visible-medium is-text-white is-size-6 m-r-10 fa fa-envelope-o"></i> 接触を試みる
 			</a>
 		</div>
 	</div>

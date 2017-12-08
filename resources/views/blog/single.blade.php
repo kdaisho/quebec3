@@ -16,7 +16,7 @@
 <section class="section container">
 	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
 		<div class="">
-			<img class="featured-image" src="{{ asset('images/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
+			<img class="featured-image" src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 			<div class="has-text-centered">
 				<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 				<p class="has-text-weight-light m-b-10">{{ date('Y年 m月d日 g:i A',  strtotime($post->created_at)) }}</p>
@@ -64,7 +64,7 @@
 	</div>
 
 	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet m-t-50">
-		<h4 class="is-size-3 is-size-4-mobile">コメントどうぞ。</h4>
+		<h4 class="is-size-3 is-size-4-mobile">コメントどうぞ。<span class="is-size-6 no-wrap"><span class="has-text-danger">*</span>は必須項目です。</span></h4>
 		{{ Form::open(['route' => ['comments.store', $post->id], 'method' => 'POST', 'class' => 'form']) }}
 
 			{{ Form::label('name', 'お名前:', ['class' => 'label m-t-20']) }}
@@ -75,7 +75,7 @@
 				</span>
 			</div>
 
-			{{ Form::label('email', 'メールアドレス:', ['class' => 'label m-t-20']) }}
+			<label for="email" class="label m-t-20"><span class="has-text-danger">*</span>メールアドレス:<span class="is-size-6 is-size-7-mobile no-wrap">（公開されることはありません。）</span></label>
 			<div class="control has-icons-left">
 				{{ Form::text('email', null, ['id' => 'email', 'class' => 'input', 'placeholder' => 'example@gmail.com']) }}
 				<span class="icon is-small is-left">
@@ -90,10 +90,13 @@
 			</div>
 
 			<div class="control has-icons-left">
-				{{ Form::label('comment', 'コメント:', ['class' => 'label m-t-20']) }}
-				{{ Form::textarea('comment', null, ['id' => 'message', 'class' => 'textarea', 'rows' => '5', 'placeholder' => 'ここには何か書いて下さい。']) }}
+				<label for="comment" class="label m-t-20"><span class="has-text-danger">*</span>コメント:</label>
+				{{ Form::textarea('comment', null, ['id' => 'comment', 'class' => 'textarea', 'rows' => '5', 'placeholder' => 'ここには何か書いて下さい。']) }}
 				<p id="errorMsgText" class="help is-danger" style="display: none;">
-					"<span id="textRes"></span>" って言われても...この欄もうちょっと書いてもらわないと困る。
+					この欄は必須と言ったでしょう。
+				</p>
+				<p id="errorMsgTextTooShort" class="help is-danger" style="display: none;">
+					"<span id="textRes"></span>" って言われても...もう少し書きましょうよ。
 				</p>
 				{{ Form::submit('コメントする', ['id' => 'submit', 'class' => 'button is-success m-t-30 is-fullwidth']) }}
 			</div>
@@ -147,12 +150,12 @@ document.getElementById("submit").addEventListener("click", function(event) {
 	var error = false,
 		emailInput = document.getElementById("email"),
 		emailValue = document.getElementById("email").value,
-		textInput = document.getElementById("message"),
-		textValue = document.getElementById("message").value,
-
-		errorMsgEmail = document.getElementById("errorMsgEmail");
-		errorMsgEmailValidate = document.getElementById("errorMsgEmailValidate");
-		errorMsgText = document.getElementById("errorMsgText");
+		textInput = document.getElementById("comment"),
+		textValue = document.getElementById("comment").value,
+		errorMsgEmail = document.getElementById("errorMsgEmail"),
+		errorMsgEmailValidate = document.getElementById("errorMsgEmailValidate"),
+		errorMsgText = document.getElementById("errorMsgText"),
+		errorMsgTextTooShort = document.getElementById("errorMsgTextTooShort");
 
 	setDefault();
 	validateEmail(emailValue);
@@ -165,7 +168,7 @@ document.getElementById("submit").addEventListener("click", function(event) {
 	function setDefault() {
 		emailInput.className = "input";
 		textInput.className = "textarea";
-		errorMsgEmail.style.display = errorMsgEmailValidate.style.display =  errorMsgText.style.display = "none";
+		errorMsgEmail.style.display = errorMsgEmailValidate.style.display =  errorMsgText.style.display = errorMsgTextTooShort.style.display = "none";
 	}
 
 	function validateEmail(em, event) {
@@ -191,15 +194,22 @@ document.getElementById("submit").addEventListener("click", function(event) {
 	function validateText() {
 		resOutput = document.getElementById("textRes");
 		textValue = textValue.trim();
-		if (textValue.length <= 5) {
-			resOutput.innerHTML = textValue;
+		if (textValue.length === 0) {
 			errorMsgText.style.display = "block";
+			textInput.className = "textarea is-danger";
+			error = true;
+			return false;
+		}
+		else if (textValue.length != 0 && textValue.length <= 5) {
+			resOutput.innerHTML = textValue;
+			errorMsgTextTooShort.style.display = "block";
 			textInput.className = "textarea is-danger";
 			error = true;
 			return false;
 		}
 	}
 
+	error = true;
 	function preventSubmit(event) {
 		this.event.preventDefault();
 	}

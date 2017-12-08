@@ -13,15 +13,11 @@
 
 			@include('partials._nav')
 
-			{{-- <div> --}}
+			@include('partials._messages')
 
-				@include('partials._messages')
+			@yield('content')
 
-				@yield('content')
-
-				@include('partials._footer')
-
-			{{-- </div> --}}
+			@include('partials._footer')
 
 			@include('partials._javascript')
 

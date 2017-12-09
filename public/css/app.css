@@ -17382,25 +17382,17 @@ a.navbar-item.is-logo img {
   width: 200px;
 }
 
-.is-hero-gen {
-  background: #0890fb url("/images/blog-bg-2.jpg") no-repeat center;
-}
-
-.is-hero-gen h1 {
-  color: #fff;
-  letter-spacing: 0.25rem;
-  text-align: center;
-}
-
-.media {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media (min-width: 768px) {
+  .is-welcome .is-64x64 {
+    height: 128px;
+    width: 128px;
+  }
 }
 
 @media (min-width: 768px) {
-  .media {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+  .is-blog-index .is-64x64 {
+    height: 128px;
+    width: 128px;
   }
 }
 

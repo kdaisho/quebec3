@@ -1,0 +1,8 @@
+.is-welcome {
+    .is-64x64 {
+        @include breakpoint(small) {
+            height: 128px;
+            width: 128px;
+        }
+    }
+}

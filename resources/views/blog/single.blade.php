@@ -9,6 +9,16 @@
 	<?php $desc .=  $tag->name .', '; ?>
 @endforeach
 
+@section('openGraph')
+	<meta property="og:title" content="{{ $post->title }}" />
+	<meta property="og:site_name" content="Quebec3 - 海外移住ポータル" />
+	<meta property="og:url" content="{{ url()->current() }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="{{ mb_substr(strip_tags($post->body), 0, 50) }}" />
+	<meta property="og:image" content="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" />
+	<meta property="og:image:width" content="400" />
+@endsection
+
 @section('desc', "$desc")
 
 @section('content')
@@ -21,19 +31,22 @@
 				<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 				<p class="has-text-weight-light m-b-10">{{ date('Y年 m月d日 g:i A',  strtotime($post->created_at)) }}</p>
 
+				{{-- in-article ads 01 --}}
+				@include('partials._ads-inarticle-01')
+
 				@foreach($post->tags as $tag)
 					<span class="tag is-success">{{ $tag->name }}</span>
 				@endforeach
 			</div>
 
 			<div class="is-desktop m-t-30">
-				{{-- in-article ads --}}
-				{{-- @include('partials._ads-inarticle') --}}
-
 				{!! $post->body !!}
 			</div>
 			<hr>
 			<p>カテゴリー：<span class="tag is-info">{{ $post->category->name }}</span></p>
+
+			{{-- in-article ads 02 --}}
+			@include('partials._ads-inarticle-02')
 
 			@include('partials._sns')
 		</div>

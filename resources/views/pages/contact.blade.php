@@ -17,4 +17,8 @@
 	</div>
 </section>
 
+<section class="section container">
+	@include('partials._ads-inarticle-02')
+</section>
+
 @endsection

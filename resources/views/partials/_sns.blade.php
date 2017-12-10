@@ -3,13 +3,13 @@
 	<div class="columns">
 		<div class="column is-narrow">
 			<a class="button is-success is-sns is-fullwidth" href="http://overseas.blogmura.com/montreal/ranking.html" target="_blank">
-				<i class="fa fa-thumbs-o-up m-r-10"></i>にほんブログ村ランキング
+				<i class="fa fa-thumbs-up is-size-5 m-r-10"></i>にほんブログ村ランキング
 			</a>
 		</div>
 
 		<div class="column is-narrow">
 			<a class="button is-success is-sns is-fullwidth" href="http://blog.with2.net/link.php?1744264" target="_blank">
-				<i class="fa fa-thumbs-o-up m-r-10"></i>海外生活ブログランキング
+				<i class="fa fa-thumbs-up is-size-5 m-r-10"></i>海外生活ブログランキング
 			</a>
 		</div>
 	</div>

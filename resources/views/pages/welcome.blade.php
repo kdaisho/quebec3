@@ -42,7 +42,7 @@
 									@if(isset($post->image))
 										<img src="/images/{{ $post->slug . '/' . $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
 									@else
-										<img src="/images/profile.jpg" alt="featured image: general">
+										<img src="/images/default-thumb.jpg" alt="Quebec3 logo">
 									@endif
 								</span>
 							</figure>
@@ -58,7 +58,6 @@
 						</article>
 
 						@if($post->id % 4 == 0 )
-							{{-- in-feed ads --}}
 							@include('partials._ads-infeed')
 						@endif
 

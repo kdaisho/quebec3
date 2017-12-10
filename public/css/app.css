@@ -17412,19 +17412,6 @@ a.navbar-item.is-logo img {
   padding: .5rem;
 }
 
-.is-sns .button {
-  border: none;
-  min-width: 260px;
-}
-
-.is-sns .is-facebook {
-  background: #3b5998;
-}
-
-.is-sns .is-twitter {
-  background: #00aced;
-}
-
 .is-bg-quebec3 {
   background: #0890fb;
   color: #fff;

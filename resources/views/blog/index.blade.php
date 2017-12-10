@@ -30,7 +30,7 @@
 								@if(isset($post->image))
 									<img src="images/{{ $post->slug . '/' . $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
 								@else
-									<img src="http://imgsv.imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_nikkor28-300mmf_35-56gd_ed_vr/img/sample/sample4_l.jpg" alt="featured image: general">
+									<img src="/images/default-thumb.jpg" alt="Quebec3 logo">
 								@endif
 							</p>
 						</figure>

@@ -21,7 +21,7 @@
 
 					@if($post->id % 4 == 0 )
 						{{-- in-feed ads --}}
-						{{-- @include('partials._ads-infeed') --}}
+						@include('partials._ads-infeed')
 					@endif
 
 					<article class="media">

@@ -42,7 +42,9 @@
 		<hr>
 		<p>カテゴリー：<span class="tag is-info">{{ $post->category->name }}</span></p>
 
-		@include('partials._ads-inarticle-03')
+		<div class="m-t-30 m-b-30">
+			@include('partials._ads-inarticle-03')
+		</div>
 
 		@include('partials._sns')
 	</div>

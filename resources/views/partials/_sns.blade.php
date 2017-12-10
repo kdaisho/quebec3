@@ -16,14 +16,14 @@
 
 	<div class="columns">
 		<div class="column is-narrow">
-			<a class="button is-success is-sns is-fullwidth" href="http://www.facebook.com/share.php?u={{ url()->current() }}" target="_blank">
-				<i class="fa fa-facebook-square m-r-10"></i>Facebookでシェア
+			<a class="button is-facebook is-sns has-text-white is-fullwidth" href="http://www.facebook.com/share.php?u={{ url()->current() }}" target="_blank">
+				<i class="fa fa-facebook-square is-size-5 m-r-10"></i>Facebook
 			</a>
 		</div>
 
 		<div class="column is-narrow">
-			<a class="button is-success is-sns is-fullwidth" href="http://twitter.com/share?url={{ url()->current() }}&amp;text={{ $post->title }}" target="_blank">
-				<i class="fa fa-twitter-square m-r-10"></i>Twitterでシェア
+			<a class="button is-twitter is-sns has-text-white is-fullwidth" href="http://twitter.com/share?url={{ url()->current() }}&amp;text={{ $post->title }}" target="_blank">
+				<i class="fa fa-twitter-square is-size-5 m-r-10"></i>Twitter
 			</a>
 		</div>
 	</div>

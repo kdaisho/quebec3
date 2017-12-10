@@ -1,14 +1,14 @@
 require('./bootstrap');
 
-window.Vue = require('vue');
+// window.Vue = require('vue');
 
-import Buefy from 'buefy';
+// import Buefy from 'buefy';
 
-Vue.use(Buefy);
+// Vue.use(Buefy);
 
 // Vue.component('example', require('./components/Example.vue'));
 
-var app = new Vue({
-    el: '#app',
-    data: {}
-});
+// var app = new Vue({
+//     el: '#app',
+//     data: {}
+// });

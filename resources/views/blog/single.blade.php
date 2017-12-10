@@ -25,31 +25,26 @@
 
 <section class="section container">
 	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
-		<div class="">
-			<img class="featured-image" src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
-			<div class="has-text-centered">
-				<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
-				<p class="has-text-weight-light m-b-10">{{ date('Y年 m月d日 g:i A',  strtotime($post->created_at)) }}</p>
-
-				{{-- in-article ads 01 --}}
-				@include('partials._ads-inarticle-01')
-
-				@foreach($post->tags as $tag)
-					<span class="tag is-success">{{ $tag->name }}</span>
-				@endforeach
-			</div>
-
-			<div class="is-desktop m-t-30">
-				{!! $post->body !!}
-			</div>
-			<hr>
-			<p>カテゴリー：<span class="tag is-info">{{ $post->category->name }}</span></p>
-
-			{{-- in-article ads 02 --}}
-			@include('partials._ads-inarticle-02')
-
-			@include('partials._sns')
+		@if(isset($post->image))
+		<img class="featured-image" src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
+		@endif
+		<div class="has-text-centered">
+			<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
+			<p class="has-text-weight-light m-b-10">{{ date('Y年 m月d日 g:i A',  strtotime($post->created_at)) }}</p>
+			@foreach($post->tags as $tag)
+				<span class="tag is-success">{{ $tag->name }}</span>
+			@endforeach
 		</div>
+
+		<div class="is-desktop m-t-30">
+			{!! $post->body !!}
+		</div>
+		<hr>
+		<p>カテゴリー：<span class="tag is-info">{{ $post->category->name }}</span></p>
+
+		@include('partials._ads-inarticle-03')
+
+		@include('partials._sns')
 	</div>
 
 	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet m-to-50">
@@ -61,12 +56,26 @@
 	</div>
 
 	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet m-t-50">
+		@include('partials._signup')
+	</div>
+
+	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet m-t-50">
 		@include('partials._pagination')
 	</div>
 
 </section>
 
 <script>
+/* === adsense insertion === */
+(function() {
+	var ads = document.getElementsByClassName("ads");
+	if(ads[0]) {
+		ads[0].innerHTML = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3483277501004098" data-ad-slot="3797668697"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>';
+	}
+	else if(ads[1]) {
+		ads[1].innerHTML = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3483277501004098" data-ad-slot="3374302335"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>';
+	}
+}());
 /* ==== form validation ==== */
 document.getElementById("submit").addEventListener("click", function(event) {
 	var error = false,

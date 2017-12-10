@@ -18,7 +18,7 @@
 </section>
 
 <section class="section container">
-	@include('partials._ads-inarticle-02')
+	@include('partials._ads-inarticle-03')
 </section>
 
 @endsection

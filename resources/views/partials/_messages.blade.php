@@ -26,11 +26,10 @@
 					<li>{{ $error }}</li>
 				@endforeach
 			</ul>
-		</div>		
+		</div>
 	</div>
 </div>
 @endif
-
 
 <script>
 function closeMsg() {

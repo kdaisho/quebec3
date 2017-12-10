@@ -50,7 +50,7 @@
 
 			<div class="column">
 				{{-- Signup Form --}}
-				@include('partials.signup')
+				@include('partials._signup')
 			</div>
 		</div>
 	</div>

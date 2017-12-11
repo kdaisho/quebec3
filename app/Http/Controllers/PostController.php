@@ -63,7 +63,10 @@ class PostController extends Controller
 			'category_id' => 'required|numeric',
 			'is_online' => 'required|numeric',
 			'body' => 'required',
-			'featured_image' => 'sometimes|image'
+			'featured_image' => 'sometimes|image',
+
+			'images.*' => 'sometimes|image'
+
 		));
 
 		$post->id = $request->id;
@@ -99,10 +102,21 @@ class PostController extends Controller
 				})->crop($sizes[$key][0], $sizes[$key][1])
 				->save($targetPath . $newName);
 			}
-
 			$post->image = $nameWithOutExt;
-
 		}
+
+		//New ->
+		$pictures = [];
+		if($request->hasFile('images')) {
+			$files = $request->file('images');
+			$targetPath = public_path() . '/images/' . $post->slug .'/';
+			foreach($files as $file) {
+				$name = $file->getClientOriginalName();
+				$file->move($targetPath, $name);
+				$pictures[] = $name;
+			}
+		}
+		//<- New
 
 		$post->save();
 
@@ -168,7 +182,10 @@ class PostController extends Controller
 			'category_id' => 'required|integer',
 			'is_online' => 'required|numeric',
 			'body' => 'required',
-			'featured_image' => 'image'
+			'featured_image' => 'image',
+
+			'images.*' => 'sometimes|image'
+
 		));
 
 
@@ -215,6 +232,37 @@ class PostController extends Controller
 			}
 		}
 
+		//New ->
+		$pictures = [];
+		if($request->hasFile('images')) {
+			$files = $request->file('images');
+			$targetPath = public_path() . '/images/' . $post->slug .'/';
+			foreach($files as $file) {
+				$name = $file->getClientOriginalName();
+				$file->move($targetPath, $name);
+				$pictures[] = $name;
+			}
+		}
+		//<- New
+
+		// $picture = [];
+		// if ($request->hasFile('images')) {
+		//     $files = $request->file('images');
+		//     foreach($files as $file) {
+		//         $filename = $file->getClientOriginalName();
+		//         // $extension = $file->getClientOriginalExtension();
+		//         $picture = $filename;
+		//         $destinationPath = public_path() . '/images/' . $post->slug;
+		//         $file->move($destinationPath, $picture);
+		//     }
+		// }
+
+		// if (!empty($picture['images'])) {
+		//     $picture[''] = $picture;
+		// }
+		// else {
+		//     unset($picture['']);
+		// }
 
 		$post->save();
 

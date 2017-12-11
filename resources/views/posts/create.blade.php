@@ -53,6 +53,7 @@ tinymce.init({
 					@endforeach
 				</select>
 			</div>
+
 			<div class="file m-t-40">
 				<span class="file-cta">
 					<span class="file-icon">
@@ -63,6 +64,18 @@ tinymce.init({
 					</span>
 				</span>
 				{{ Form::file('featured_image', ['class' => 'file-input']) }}
+			</div>
+
+			<div class="file m-t-40">
+				<span class="file-cta">
+					<span class="file-icon">
+						<i class="fa fa-upload"></i>
+					</span>
+					<span class="file-label">
+						{{ Form::label('images', 'Upload Photos:', ['class' => 'file-label']) }}
+					</span>
+				</span>
+				{{ Form::file('images[]', ['class' => 'file-input', 'multiple']) }}
 			</div>
 
 			{{ Form::label('body', 'Body:', ['class' => 'label m-t-20']) }}

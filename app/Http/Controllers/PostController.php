@@ -80,10 +80,11 @@ class PostController extends Controller
 			$types = ['-original.', '-thumb.'];
 			// Width and height for thumb and resized
 			$sizes = [['128', '128']];
-			$postPath = public_path() . '/images/' . $post->slug .'/';
-			File::makeDirectory($postPath, 0755, true);
-			
-			$targetPath = $postPath;
+			$targetPath = public_path() . '/images/' . $post->slug .'/';
+
+			if(!File::exists($targetPath)) {
+				File::makeDirectory($targetPath, 0755, true);
+			}
 
 			$image = $request->file('featured_image');
 
@@ -110,6 +111,11 @@ class PostController extends Controller
 		if($request->hasFile('images')) {
 			$files = $request->file('images');
 			$targetPath = public_path() . '/images/' . $post->slug .'/';
+
+			if(!File::exists($targetPath)) {
+				File::makeDirectory($targetPath, 0755, true);
+			}
+
 			foreach($files as $file) {
 				$name = $file->getClientOriginalName();
 				$file->move($targetPath, $name);
@@ -205,6 +211,10 @@ class PostController extends Controller
 			$sizes = [['128', '128']];
 			$targetPath = public_path() . '/images/' . $post->slug . '/';
 
+			if(!File::exists($targetPath)) {
+				File::makeDirectory($targetPath, 0755, true);
+			}
+
 			$image = $request->file('featured_image');
 			$filename = time() . '.' . $image->getClientOriginalName();
 			$ext =  $image->getClientOriginalExtension();
@@ -237,6 +247,11 @@ class PostController extends Controller
 		if($request->hasFile('images')) {
 			$files = $request->file('images');
 			$targetPath = public_path() . '/images/' . $post->slug .'/';
+
+			if(!File::exists($targetPath)) {
+				File::makeDirectory($targetPath, 0755, true);
+			}
+
 			foreach($files as $file) {
 				$name = $file->getClientOriginalName();
 				$file->move($targetPath, $name);
@@ -244,25 +259,6 @@ class PostController extends Controller
 			}
 		}
 		//<- New
-
-		// $picture = [];
-		// if ($request->hasFile('images')) {
-		//     $files = $request->file('images');
-		//     foreach($files as $file) {
-		//         $filename = $file->getClientOriginalName();
-		//         // $extension = $file->getClientOriginalExtension();
-		//         $picture = $filename;
-		//         $destinationPath = public_path() . '/images/' . $post->slug;
-		//         $file->move($destinationPath, $picture);
-		//     }
-		// }
-
-		// if (!empty($picture['images'])) {
-		//     $picture[''] = $picture;
-		// }
-		// else {
-		//     unset($picture['']);
-		// }
 
 		$post->save();
 

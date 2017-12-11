@@ -72,10 +72,10 @@ tinymce.init({
 						<i class="fa fa-upload"></i>
 					</span>
 					<span class="file-label">
-						{{ Form::label('images', 'Upload Photos:', ['class' => 'file-label']) }}
+						{{ Form::label('images', 'Upload Multiple Images:', ['class' => 'file-label']) }}
 					</span>
 				</span>
-				{{ Form::file('images[]', ['class' => 'file-input', 'multiple']) }}
+				{{ Form::file('images[]', ['id' => 'images', 'class' => 'file-input', 'multiple']) }}
 			</div>
 
 			{{ Form::label('body', 'Body:', ['class' => 'label m-t-20']) }}

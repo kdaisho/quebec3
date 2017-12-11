@@ -32,7 +32,7 @@ tinymce.init({
 	<div class="columns">
 
 		<div class="column is-9">
-			<img src="{{ asset('images/' . $post->image) }}" alt="Featured Image" style="display: block;">
+			<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image" style="display: block;">
 
 			{{ Form::label('title', 'Title:', ['class' => 'label m-t-20']) }}
 			{{ Form::text('title', null, ['class' => 'input']) }}
@@ -68,10 +68,10 @@ tinymce.init({
 						<i class="fa fa-upload"></i>
 					</span>
 					<span class="file-label">
-						{{ Form::label('images', 'Upload Photos:', ['class' => 'file-label']) }}
+						{{ Form::label('images', 'Upload Multiple Images:', ['class' => 'file-label']) }}
 					</span>
 				</span>
-				{{ Form::file('images[]', ['class' => 'file-input', 'multiple']) }}
+				{{ Form::file('images[]', ['id' => 'images', 'class' => 'file-input', 'multiple']) }}
 			</div>
 
 			{{ Form::label('body', 'Body:', ['class' => 'label m-t-20']) }}

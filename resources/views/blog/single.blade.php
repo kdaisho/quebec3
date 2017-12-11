@@ -28,7 +28,7 @@
 		@if(isset($post->image))
 		<img class="featured-image" src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 		@endif
-		<div class="has-text-centered">
+		<div class="blog-content">
 			<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 			<p class="has-text-weight-light m-b-10">{{ date('Y年 m月d日 g:i A',  strtotime($post->created_at)) }}</p>
 			@foreach($post->tags as $tag)
@@ -57,7 +57,7 @@
 		@include('partials._form-comment')
 	</div>
 
-	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet m-t-50">
+	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-t-50">
 		@include('partials._signup')
 	</div>
 

@@ -23,22 +23,6 @@
 
 @section('content')
 
-<style>
-.blog-body p {
-	padding-bottom: 2rem;
-	line-height: 2rem;
-}
-.blog-body img {
-	display: block;
-	margin: 0 auto;
-}
-.blog-body img + p {
-	font-size: .75rem;
-	line-height: 1rem;
-}
-
-</style>
-
 <section class="section container is-blog-single">
 	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet">
 		@if(isset($post->image))

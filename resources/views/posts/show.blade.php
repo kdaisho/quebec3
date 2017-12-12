@@ -4,15 +4,18 @@
 
 @section('content')
 
-<div class="section container">
+<div class="section container is-blog-show">
 	<div class="columns">
 
-		<div class="column is-9">
+		<div class="column is-6">
 
 			<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 
-			<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
-			<p class="lead">{!! $post->body !!}</p>
+			<h1 class="title is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
+			<div class="blog-body">
+				{{-- <p class="lead">{!! $post->body !!}</p> --}}
+				{!! $post->body !!}
+			</div>
 
 			<hr>
 			<div class="tags">
@@ -66,7 +69,7 @@
 			</div>
 		</div>
 
-		<div class="column is-3">
+		<div class="column is-3 is-offset-1">
 			<div class="box">
 				<dl style="overflow-x: scroll;">
 					<label>URL:</label>

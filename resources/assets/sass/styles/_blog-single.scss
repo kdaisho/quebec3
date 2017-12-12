@@ -1,4 +1,5 @@
-.is-blog-single {
+.is-blog-single,
+.is-blog-show {
 	.column {
 		padding: 0;
 	}
@@ -9,5 +10,28 @@
 	.share-buttons > div {
 		float: left;
 		margin-right: 15px;
+	}
+	.blog-body {
+		h2 {
+			font-size: 1.5rem;
+			font-weight: bold;
+			padding-bottom: .5rem;
+		}
+		h3 {
+			font-weight: bold;
+			padding-bottom: .5rem;
+		}
+		p {
+			padding-bottom: 2rem;
+			line-height: 2rem;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		p.img {
+			font-size: .75rem;
+			line-height: 1rem;
+		}
 	}
 }

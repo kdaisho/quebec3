@@ -17396,18 +17396,52 @@ a.navbar-item.is-logo img {
   }
 }
 
-.is-blog-single .column {
+.is-blog-single .column,
+.is-blog-show .column {
   padding: 0;
 }
 
-.is-blog-single .featured-image {
+.is-blog-single .featured-image,
+.is-blog-show .featured-image {
   display: block;
   margin: 0 auto;
 }
 
-.is-blog-single .share-buttons > div {
+.is-blog-single .share-buttons > div,
+.is-blog-show .share-buttons > div {
   float: left;
   margin-right: 15px;
+}
+
+.is-blog-single .blog-body h2,
+.is-blog-show .blog-body h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+.is-blog-single .blog-body h3,
+.is-blog-show .blog-body h3 {
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+.is-blog-single .blog-body p,
+.is-blog-show .blog-body p {
+  padding-bottom: 2rem;
+  line-height: 2rem;
+}
+
+.is-blog-single .blog-body img,
+.is-blog-show .blog-body img {
+  display: block;
+  margin: 0 auto;
+}
+
+.is-blog-single .blog-body p.img,
+.is-blog-show .blog-body p.img {
+  font-size: .75rem;
+  line-height: 1rem;
 }
 
 .signup-title {

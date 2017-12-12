@@ -23,20 +23,36 @@
 
 @section('content')
 
-<section class="section container">
-	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
+<style>
+.blog-body p {
+	padding-bottom: 2rem;
+	line-height: 2rem;
+}
+.blog-body img {
+	display: block;
+	margin: 0 auto;
+}
+.blog-body img + p {
+	font-size: .75rem;
+	line-height: 1rem;
+}
+
+</style>
+
+<section class="section container is-blog-single">
+	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet">
 		@if(isset($post->image))
 		<img class="featured-image" src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 		@endif
-		<div class="blog-content">
-			<h1 class="is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
+		<div>
+			<h1 class="title is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 			<p class="has-text-weight-light m-b-10">{{ date('Y年 m月d日 g:i A',  strtotime($post->created_at)) }}</p>
 			@foreach($post->tags as $tag)
 				<span class="tag is-success">{{ $tag->name }}</span>
 			@endforeach
 		</div>
 
-		<div class="is-desktop m-t-30">
+		<div class="blog-body is-desktop m-t-50">
 			{!! $post->body !!}
 		</div>
 		<hr>
@@ -49,11 +65,11 @@
 		@include('partials._sns')
 	</div>
 
-	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet m-to-50">
+	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-to-50">
 		@include('partials._comments')
 	</div>
 
-	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet m-t-50">
+	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-t-50">
 		@include('partials._form-comment')
 	</div>
 
@@ -61,7 +77,7 @@
 		@include('partials._signup')
 	</div>
 
-	<div class="column is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet m-t-50">
+	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-t-50">
 		@include('partials._pagination')
 	</div>
 

@@ -17396,6 +17396,20 @@ a.navbar-item.is-logo img {
   }
 }
 
+.is-blog-single .column {
+  padding: 0;
+}
+
+.is-blog-single .featured-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.is-blog-single .share-buttons > div {
+  float: left;
+  margin-right: 15px;
+}
+
 .signup-title {
   background: #0890fb;
   border-radius: 5px 5px 0 0;
@@ -17453,11 +17467,6 @@ a.navbar-item.is-logo img {
 
 .hero {
   background: #0890fb url("/images/quebec3-hero.jpg") no-repeat center;
-}
-
-.featured-image {
-  display: block;
-  margin: 0 auto;
 }
 
 .pipe {

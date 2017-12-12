@@ -12,27 +12,29 @@
 !function(e,t,n){var o,s=e.getElementsByTagName(t)[0];e.getElementById(n)||(o=e.createElement(t),o.id=n,o.src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11",s.parentNode.insertBefore(o,s))}(document,"script","facebook-jssdk");
 </script>
 
-<div id="fb-root"></div>
+<section class="is-sns m-t-50 m-b-30 colus">
+	<h3 class="m-b-20 is-size-6 title">イイねする？</h3>
 
-<section class="is-sns m-t-50 m-b-30">
-	<h3 class="m-b-20 has-text-centered is-size-6 title">イイねする？</h3>
-	<div class="columns">
-		<div class="column is-narrow">
-			<a class="button is-warning as-text-white is-fullwidth" href="http://overseas.blogmura.com/montreal/ranking.html" target="_blank">
-				<i class="fa fa-thumbs-up is-size-5 m-r-10"></i>にほんブログ村
+	<div class="share-buttons is-clearfix">
+		<div class="m-b-15">
+			<a class="button is-warning is-size-7 has-text-weight-semibold" href="http://overseas.blogmura.com/montreal/ranking.html" target="_blank">
+				<i class="fa fa-thumbs-up is-size-6 m-r-10"></i>にほんブログ村
 			</a>
 		</div>
-
-		<div class="column is-narrow">
-			<a class="button is-success as-text-white is-fullwidth" href="http://blog.with2.net/link.php?1744264" target="_blank">
-				<i class="fa fa-thumbs-up is-size-5 m-r-10"></i>海外生活ブログ
+		<div class="m-b-15">
+			<a class="button is-success is-size-7 has-text-weight-semibold" href="http://blog.with2.net/link.php?1744264" target="_blank">
+				<i class="fa fa-thumbs-up is-size-6 m-r-10"></i>海外生活ブログ
 			</a>
 		</div>
-		<div class="column is-narrow">
-			<div class="fb-like" data-href="http://www.quebec3.com/{{$post->slug}}" data-width="120" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+	</div>
+
+	<div class="share-buttons m-t- is-clearfix">
+		<div>
+			<a class="button twitter-share-button" href="https://twitter.com/intent/tweet?text=#拡散希望" data-size="large">Tweet</a>
 		</div>
-		<div class="column is-narrow">
-			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=#拡散希望" data-size="large">Tweet</a>
-		</div>
+
+		<div id="fb-root"></div>
+		<div class="fb-like" data-href="http://www.quebec3.com/{{$post->slug}}" data-width="120" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+		&nbsp;
 	</div>
 </section>

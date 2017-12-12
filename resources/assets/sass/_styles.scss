@@ -3,6 +3,7 @@
 @import "styles/footer";
 @import "styles/welcome";
 @import "styles/blog-index";
+@import "styles/blog-single";
 @import "styles/signup";
 @import "styles/sns";
 
@@ -42,12 +43,6 @@
 // LPV
 .hero {
 	background: $brand-primary url("/images/quebec3-hero.jpg") no-repeat center;
-}
-
-// Blog Single
-.featured-image {
-	display: block;
-	margin: 0 auto;
 }
 
 .pipe {

@@ -38,7 +38,7 @@
 						<div class="media-content">
 							<div class="content">
 								<h3 class="m-b-5 is-size-4 is-size-5-mobile">{{ $post->title }}</h3>
-								<p class="has-text-weight-light is-size-6 is-size-7-mobile m-b-5">{{ date('Y年 m月d日',  strtotime($post->created_at)) }}</p>
+								<p class="has-text-weight-light is-size-6 is-size-7-mobile m-b-5">{{ date('Y年 n月j日',  strtotime($post->created_at)) }}</p>
 								<p>{{ mb_substr(strip_tags($post->body), 0, 200) }}{{ mb_strlen($post->body) > 200 ? '...' : '' }}</p>
 								<a href="{{ route('blog.single', $post->slug) }}" class="button is-primary">続きを読む</a>
 							</div>

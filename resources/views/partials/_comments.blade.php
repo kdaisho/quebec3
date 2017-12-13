@@ -15,7 +15,7 @@
 						名無しさん
 					@endif
 				</h4>
-				<p class="has-text-weight-light is-size-6 is-size-7-mobile">{{ date('Y年 m月d日 g:i A',  strtotime($comment->created_at)) }}</p>
+				<p class="has-text-weight-light is-size-6 is-size-7-mobile">{{ date('Y年 n月j日 g:i A',  strtotime($comment->created_at)) }}</p>
 			</div>
 		</div>
 		<div class="comment-content">

@@ -30,7 +30,7 @@
 		@endif
 		<div>
 			<h1 class="title is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
-			<p class="has-text-weight-light m-b-10">{{ date('Y年 m月d日 g:i A',  strtotime($post->created_at)) }}</p>
+			<p class="has-text-weight-light m-b-10">{{ date('Y年 n月j日 g:i A',  strtotime($post->created_at)) }}</p>
 			@foreach($post->tags as $tag)
 				<span class="tag is-success">{{ $tag->name }}</span>
 			@endforeach

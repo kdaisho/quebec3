@@ -29,7 +29,7 @@
 	<div class="container">
 		<div class="navbar-brand">
 			<a class="navbar-item is-logo" href="{{ url('/') }}">
-				<img src="{{ asset('images/logo-blanc.svg') }}" alt="Quebec3 logo">
+				<img src="{{ asset('images/logo.opt.svg') }}" alt="Quebec3 logo">
 			</a>
 			<div class="button navbar-burger" data-target="navMenu">
 				<span></span>

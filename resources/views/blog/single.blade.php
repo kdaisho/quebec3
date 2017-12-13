@@ -24,7 +24,7 @@
 @section('content')
 
 <section class="section container is-blog-single">
-	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet">
+	<div class="column no-side-pad is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet">
 		@if(isset($post->image))
 		<img class="featured-image" src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 		@endif
@@ -49,19 +49,19 @@
 		@include('partials._sns')
 	</div>
 
-	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-to-50">
+	<div class="column no-side-pad is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-to-50">
 		@include('partials._comments')
 	</div>
 
-	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-t-50">
+	<div class="column no-side-pad is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-t-50">
 		@include('partials._form-comment')
 	</div>
 
-	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-t-50">
+	<div class="column no-side-pad is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-t-50">
 		@include('partials._signup')
 	</div>
 
-	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-t-50">
+	<div class="column no-side-pad is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet m-t-50">
 		@include('partials._pagination')
 	</div>
 

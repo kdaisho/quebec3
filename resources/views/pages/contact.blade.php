@@ -12,7 +12,7 @@
 </section>
 
 <section class="section container">
-	<div class="column is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet">
+	<div class="column no-side-pad is-6-desktop is-offset-3-desktop is-10-tablet is-offset-1-tablet">
 		@include('partials._form')
 	</div>
 </section>

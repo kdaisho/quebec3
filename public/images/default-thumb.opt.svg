@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32" version="1.1">
+  <title>
+    Thumb
+  </title>
+  <desc>
+    Quebec3
+  </desc>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Thumb">
+      <rect id="bg" fill="#0890FB" x="0" y="0" width="32" height="32"/>
+      <g id="text" transform="translate(3.000000, 6.250000)" fill="#FFFFFF">
+        <path d="M5.07 19.68L0.2 14.81 0.2 5.07 5.07 0.2 9.94 0.2 14.81 5.07 14.81 14.81 13.84 15.79 17.25 19.68 5.07 19.68ZM5 5L5 14.74 9.87 14.74 9.87 5 5 5Z" id="Combined-Shape"/>
+        <polygon id="Shape-path" points="25.94 16.82 23.08 19.68 17 19.68 17 17.18 22.36 17.18 22.36 13.61 17 13.61 17 11.1 22.36 11.1 22.36 7.89 17 7.89 17 5.38 23.08 5.38 25.94 8.24"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -17396,11 +17396,6 @@ a.navbar-item.is-logo img {
   }
 }
 
-.is-blog-single .column,
-.is-blog-show .column {
-  padding: 0;
-}
-
 .is-blog-single .featured-image,
 .is-blog-show .featured-image {
   display: block;
@@ -17499,6 +17494,19 @@ a.navbar-item.is-logo img {
   display: inline-block;
 }
 
+.column.no-side-pad {
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+.format p {
+  line-height: 2rem;
+}
+
+.faq p {
+  padding: 3px 0;
+}
+
 .hero {
   background: #0890fb url("/images/quebec3-hero.jpg") no-repeat center;
 }
@@ -17531,6 +17539,8 @@ a.navbar-item.is-logo img {
   -ms-flex-item-align: center;
       align-self: center;
   display: block;
+  padding-bottom: 10px;
+  padding-top: 10px;
   width: 100%;
 }
 

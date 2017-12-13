@@ -15,7 +15,7 @@
 
 	<div class="section container is-widescreen">
 		<div class="columns">
-			<div class="column is-9 is-12-mobile m-b-30">
+			<div class="column no-side-pad is-9 is-12-mobile m-b-30">
 			@foreach($posts as $post)
 				@if($post->is_online)
 
@@ -27,10 +27,10 @@
 					<article class="media">
 						<figure class="media-left">
 							<p class="image is-64x64 m-b-15">
-								@if(isset($post->image))
+								@if(!isset($post->image))
 									<img src="images/{{ $post->slug . '/' . $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
 								@else
-									<img src="/images/default-thumb.jpg" alt="Quebec3 logo">
+									<img src="/images/default-thumb.opt.svg" alt="Quebec3 logo">
 								@endif
 							</p>
 						</figure>

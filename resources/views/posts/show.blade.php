@@ -7,7 +7,7 @@
 <div class="section container is-blog-show">
 	<div class="columns">
 
-		<div class="column is-6">
+		<div class="column no-side-pad is-6">
 
 			<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 
@@ -69,7 +69,7 @@
 			</div>
 		</div>
 
-		<div class="column is-3 is-offset-1">
+		<div class="column no-side-pad is-3 is-offset-1">
 			<div class="box">
 				<dl style="overflow-x: scroll;">
 					<label>URL:</label>

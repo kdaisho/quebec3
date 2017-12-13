@@ -42,7 +42,7 @@
 									@if(isset($post->image))
 										<img src="/images/{{ $post->slug . '/' . $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
 									@else
-										<img src="/images/default-thumb.jpg" alt="Quebec3 logo">
+										<img src="/images/default-thumb.opt.svg" alt="Quebec3 logo">
 									@endif
 								</span>
 							</figure>

@@ -17440,6 +17440,13 @@ a.navbar-item.is-logo img {
   padding-bottom: 2rem;
 }
 
+.is-blog-single .blog-body hr,
+.is-blog-show .blog-body hr {
+  background: none;
+  border-top: 2px dashed #ccc;
+  padding: 1rem 0;
+}
+
 .signup-title {
   background: #0890fb;
   border-radius: 5px 5px 0 0;

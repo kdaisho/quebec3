@@ -17430,13 +17430,14 @@ a.navbar-item.is-logo img {
 .is-blog-single .blog-body img,
 .is-blog-show .blog-body img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto .25rem;
 }
 
-.is-blog-single .blog-body p.img,
-.is-blog-show .blog-body p.img {
-  font-size: .75rem;
+.is-blog-single .blog-body div,
+.is-blog-show .blog-body div {
+  font-size: .85rem;
   line-height: 1rem;
+  padding-bottom: 2rem;
 }
 
 .signup-title {

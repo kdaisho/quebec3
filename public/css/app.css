@@ -17469,6 +17469,15 @@ a.navbar-item.is-logo img {
   width: 100%;
 }
 
+.is-blog-single .blog-body .quote,
+.is-blog-show .blog-body .quote {
+  background: #f4f4f4;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.75rem;
+}
+
 .signup-title {
   background: #0890fb;
   border-radius: 5px 5px 0 0;

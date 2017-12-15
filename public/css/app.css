@@ -17447,6 +17447,28 @@ a.navbar-item.is-logo img {
   padding: 1rem 0;
 }
 
+.is-blog-single .blog-body .ads,
+.is-blog-show .blog-body .ads {
+  margin-bottom: 2rem;
+}
+
+.is-blog-single .blog-body .video,
+.is-blog-show .blog-body .video {
+  height: 0;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  position: relative;
+}
+
+.is-blog-single .blog-body .video iframe,
+.is-blog-show .blog-body .video iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .signup-title {
   background: #0890fb;
   border-radius: 5px 5px 0 0;

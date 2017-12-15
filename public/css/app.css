@@ -17438,6 +17438,7 @@ a.navbar-item.is-logo img {
   font-size: .85rem;
   line-height: 1rem;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .is-blog-single .blog-body hr,
@@ -17476,6 +17477,7 @@ a.navbar-item.is-logo img {
   padding: 1rem;
   margin-bottom: 1rem;
   line-height: 1.75rem;
+  text-align: left;
 }
 
 .signup-title {

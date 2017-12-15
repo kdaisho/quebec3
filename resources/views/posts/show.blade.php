@@ -8,12 +8,11 @@
 	<div class="columns">
 
 		<div class="column no-side-pad is-6">
-
-			<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
-
+			@if(isset($post->image))
+				<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
+			@endif
 			<h1 class="title is-size-1 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 			<div class="blog-body">
-				{{-- <p class="lead">{!! $post->body !!}</p> --}}
 				{!! $post->body !!}
 			</div>
 

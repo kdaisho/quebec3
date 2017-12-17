@@ -32,7 +32,9 @@ tinymce.init({
 	<div class="columns">
 
 		<div class="column is-9">
-			<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image" style="display: block;">
+			@if(isset($post->image))
+				<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image" style="display: block;">
+			@endif
 
 			{{ Form::label('title', 'Title:', ['class' => 'label m-t-20']) }}
 			{{ Form::text('title', null, ['class' => 'input']) }}

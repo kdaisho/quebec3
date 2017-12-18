@@ -92,16 +92,36 @@
 
 				{!! Form::open(['route' => ['posts.destroy', $post->id], 'method' => 'DELETE']) !!}
 
-					{!! Form::submit('Delete', ['class' => 'button is-danger is-fullwidth m-t-20']) !!}
+					{!! Form::submit('Delete', ['class' => 'button is-danger is-fullwidth m-t-20', 'id' => 'deleteButton', 'disabled']) !!}
 
 				{!! Form::close() !!}
 
 				{{ Html::linkRoute('posts.index', '<< See All Posts', [], ['class' => 'button is-fullwidth m-t-20']) }}
+
+				<div class="m-t-20">
+					<input id="unlock" type="checkbox" class="is-danger m-r-5">
+					<label for="unlock" class="checkbox">Unlock to delete</label>
+				</div>
 			</div>
 		</div>
 
 	</div> <!-- end of .column -->
 
 </div>
+
+<script>
+(function() {
+	var unlock = document.getElementById("unlock"),
+		deleteButton = document.getElementById("deleteButton");
+	unlock.addEventListener("change", function() {
+		if(unlock.checked) {
+			deleteButton.removeAttribute('disabled');
+		}
+		else {
+			deleteButton.setAttribute('disabled', false);
+		}
+	}, false);
+}());
+</script>
 
 @endsection

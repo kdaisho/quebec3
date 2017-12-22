@@ -17448,6 +17448,22 @@ a.navbar-item.is-logo img {
   padding: 1rem 0;
 }
 
+.is-blog-single .blog-body table,
+.is-blog-show .blog-body table {
+  border-collapse: collapse;
+}
+
+.is-blog-single .blog-body table tr,
+.is-blog-single .blog-body table th,
+.is-blog-single .blog-body table td,
+.is-blog-show .blog-body table tr,
+.is-blog-show .blog-body table th,
+.is-blog-show .blog-body table td {
+  border: 1px solid #333;
+  padding: 3px 9px;
+  text-align: center;
+}
+
 .is-blog-single .blog-body .ads,
 .is-blog-show .blog-body .ads {
   margin-bottom: 2rem;

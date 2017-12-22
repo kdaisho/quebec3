@@ -37,6 +37,14 @@
 			border-top: 2px dashed #ccc;
 			padding: 1rem 0;
 		}
+		table {
+			border-collapse: collapse;
+			tr, th, td {
+				border: 1px solid #333;
+				padding: 3px 9px;
+				text-align: center;
+			}
+		}
 		.ads {
 			margin-bottom: 2rem;
 		}

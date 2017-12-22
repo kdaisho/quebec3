@@ -39,11 +39,7 @@
 						<article class="media">
 							<figure class="media-left">
 								<span class="image is-64x64">
-									@if(isset($post->image))
-										<img src="/images/{{ $post->slug . '/' . $post->image }}-thumb.jpg" alt="Featured image: {{ $post->title }}">
-									@else
-										<img src="/images/default-thumb.opt.svg" alt="Quebec3 logo">
-									@endif
+									<img src="/images/{{ $post->image ? $post->slug . '/' . $post->image . '-thumb.jpg' : 'default-thumb.opt.svg' }}" alt="{{ $post->image ? $post->title : 'Quebec3 logo' }}">
 								</span>
 							</figure>
 

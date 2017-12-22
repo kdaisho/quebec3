@@ -9,11 +9,7 @@
 			</div>
 			<div class="column">
 				<h4 class="is-size-5">
-					@if(isset($comment->name))
-						{{ $comment->name }}
-					@else
-						名無しさん
-					@endif
+					{{ $comment->name or '名無しさん' }}
 				</h4>
 				<p class="has-text-weight-light is-size-6 is-size-7-mobile">{{ date('Y年 n月j日 g:i A',  strtotime($comment->created_at)) }}</p>
 			</div>

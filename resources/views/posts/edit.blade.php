@@ -33,7 +33,7 @@ tinymce.init({
 
 		<div class="column is-9">
 			@if(isset($post->image))
-				<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image" style="display: block;">
+				<img src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="{{ $post->title }}" style="display: block;">
 			@endif
 
 			{{ Form::label('title', 'Title:', ['class' => 'label m-t-20']) }}

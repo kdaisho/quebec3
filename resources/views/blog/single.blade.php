@@ -28,7 +28,6 @@
 		@if(isset($post->image))
 		<img class="featured-image" src="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" alt="Featured Image: {{ $post->title }}">
 		@endif
-
 		<div>
 			<h1 class="title is-size-2 is-size-3-mobile m-t-20">{{ $post->title }}</h1>
 			<p class="has-text-weight-light m-b-10">{{ date('Y年 n月j日 g:i A',  strtotime($post->created_at)) }}</p>

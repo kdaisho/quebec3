@@ -40,11 +40,7 @@
 						@foreach($post->comments as $comment)
 						<tr>
 							<td>
-								@if(isset($comment->name))
-									{{ $comment->name }}
-								@else
-									名無しさん
-								@endif
+								{{ $comment->name or '名無しさん' }}
 							</td>
 							<td>{{ $comment->email }}</td>
 							<td>{{ $comment->comment }}</td>

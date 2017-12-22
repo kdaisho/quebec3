@@ -28,11 +28,7 @@
 					<tr>
 						<th>{{ $comment->id }}</th>
 						<td>
-							@if(isset($comment->name))
-								{{ $comment->name }}
-							@else
-								名無しさん
-							@endif
+							{{ $comment->name or '名無しさん' }}
 						</td>
 						<td>{{ $comment->email }}</td>
 						<td>{{ $comment->post->title }}</td>

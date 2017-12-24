@@ -17470,6 +17470,13 @@ a.navbar-item.is-logo img {
   text-align: center;
 }
 
+.is-blog-single .blog-body ul,
+.is-blog-single .blog-body ol,
+.is-blog-show .blog-body ul,
+.is-blog-show .blog-body ol {
+  padding-bottom: 2rem;
+}
+
 .is-blog-single .blog-body .ads,
 .is-blog-show .blog-body .ads {
   margin-bottom: 2rem;

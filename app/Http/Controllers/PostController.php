@@ -74,7 +74,7 @@ class PostController extends Controller
 		$post->slug = $request->slug;
 		$post->category_id = $request->category_id;
 		$post->is_online = $request->is_online;
-		$post->body = Purifier::clean($request->body, 'youtube');
+		$post->body = Purifier::clean($request->body, 'qc3_custom');
 
 		if($request->hasFile('featured_image')) {
 			$types = ['-original.', '-thumb.'];
@@ -202,7 +202,7 @@ class PostController extends Controller
 		$post->slug = $request->input('slug');
 		$post->category_id = $request->input('category_id');
 		$post->is_online = $request->is_online;
-		$post->body = Purifier::clean($request->body, 'youtube');
+		$post->body = Purifier::clean($request->body, 'qc3_custom');
 
 		if($request->hasFile('featured_image')) {
 

@@ -3,7 +3,13 @@
 	&:visited {
 		background: $brand-primary;
 	}
+	&:hover {
+		background: transparent;
+		border-color: $brand-primary;
+		color: $brand-primary;
+	}
 }
+
 .section .columns {
 	display: flex;
 	flex-wrap: wrap;

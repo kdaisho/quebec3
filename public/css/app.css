@@ -17477,6 +17477,11 @@ a.navbar-item.is-logo img {
   padding-bottom: 2rem;
 }
 
+.is-blog-single .blog-body ol,
+.is-blog-show .blog-body ol {
+  padding-left: 1rem;
+}
+
 .is-blog-single .blog-body .ads,
 .is-blog-show .blog-body .ads {
   margin-bottom: 2rem;

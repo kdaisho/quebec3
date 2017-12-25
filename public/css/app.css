@@ -17487,16 +17487,16 @@ a.navbar-item.is-logo img {
   margin-bottom: 2rem;
 }
 
-.is-blog-single .blog-body .video,
-.is-blog-show .blog-body .video {
+.is-blog-single .blog-body .iframe,
+.is-blog-show .blog-body .iframe {
   height: 0;
   padding-bottom: 56.25%;
   /* 16:9 */
   position: relative;
 }
 
-.is-blog-single .blog-body .video iframe,
-.is-blog-show .blog-body .video iframe {
+.is-blog-single .blog-body .iframe iframe,
+.is-blog-show .blog-body .iframe iframe {
   height: 100%;
   left: 0;
   position: absolute;

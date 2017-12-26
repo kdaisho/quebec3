@@ -35,7 +35,7 @@
 			<div class="m-b-20">
 				<p><span class="icon"><i class="has-text-success fa fa-question"></i></span>英語はカナダで学んだのですか？</p>
 				<p class="m-b-20"><span class="icon"><i class="has-text-danger fa fa-chevron-right"></i></span>( ´ｰ`)ﾄﾞﾔ　日本で話せるようにしておきました。<span class="icon">
-					<a class="link" href="{{ url('#')}}"><i class="fa fa-arrow-right m-b-20"></i></span>訓練みたいな英語練習法</a></p>
+					<a class="link" href="{{ url('/blog/interview')}}" title="英語学習している人へ"><i class="fa fa-arrow-right m-b-20"></i></span>訓練みたいな英語練習法</a></p>
 			</div>
 			<div class="m-b-20">
 				<p><span class="icon"><i class="has-text-success fa fa-question"></i></span>仏語は話せるのですか？（仏語はケベック州の公用語）</p>

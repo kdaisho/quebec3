@@ -9,7 +9,7 @@
 <!-- FB open graph tags-->
 @yield('openGraph')
 <link rel="canonical" href="{{ url()->current() }}" />
-<link rel="icon" type="image/png" href="{{ public_path() . '/favicon.png' }}">
+<link rel="icon" type="image/png" href="/favicon.png">
 
 {{ Html::style('css/app.css') }}
 

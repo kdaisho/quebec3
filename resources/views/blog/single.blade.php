@@ -72,14 +72,6 @@
 (function() {
 	document.getElementById("ads1") ? document.getElementById("ads1").innerHTML = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3483277501004098" data-ad-slot="3797668697"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>' : '';
 	document.getElementById("ads2") ? document.getElementById("ads2").innerHTML = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3483277501004098" data-ad-slot="3374302335"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>' : '';
-
-	var ads = document.getElementsByClassName("ads");
-	if(ads[0]) {
-		ads[0].innerHTML = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3483277501004098" data-ad-slot="3797668697"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>';
-	}
-	else if(ads[1]) {
-		ads[1].innerHTML = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3483277501004098" data-ad-slot="3374302335"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>';
-	}
 }());
 /* ==== form validation ==== */
 document.getElementById("submit").addEventListener("click", function(event) {

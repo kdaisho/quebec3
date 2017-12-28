@@ -20,7 +20,9 @@
 				@if($post->is_online)
 
 					@if($post->id % 4 == 0 )
-						@include('partials._ads-infeed')
+						<article class="m-t-20 m-b-20 m-r-20" style="border-bottom: 1px solid #efefef;">
+							@include('partials._ads-infeed')
+						</article>
 					@endif
 
 					<article class="media">

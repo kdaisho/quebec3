@@ -50,10 +50,6 @@
 		</div>
 	</div>
 
-	<div class="container m-t-30 m-b-30">
-		@include('partials._ads-inarticle-03')
-	</div>
-
 	<nav class="pagination" role="navigation" aria-label="pagination">
 		{{ $posts->links() }}
 	</nav>

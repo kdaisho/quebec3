@@ -53,9 +53,9 @@
 							</div>
 						</article>
 
-						{{-- @if($post->id % 4 == 0 )
+						@if($post->id % 4 == 0 )
 							@include('partials._ads-infeed')
-						@endif --}}
+						@endif
 
 					@endif
 				@endforeach

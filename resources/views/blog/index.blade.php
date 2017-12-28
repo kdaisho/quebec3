@@ -19,9 +19,9 @@
 			@foreach($posts as $post)
 				@if($post->is_online)
 
-					{{-- @if($post->id % 4 == 0 )
+					@if($post->id % 4 == 0 )
 						@include('partials._ads-infeed')
-					@endif --}}
+					@endif
 
 					<article class="media">
 						<figure class="media-left">

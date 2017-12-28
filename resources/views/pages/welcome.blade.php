@@ -64,7 +64,7 @@
 				<a class="button is-primary is-fullwidth m-t-30" href="{{ route('blog.index') }}" role="button">記事一覧へ</a>
 			</div>
 
-			<div class="column no-side-pad is-3" style="max-width: 256px;">
+			<div class="column no-side-pad" style="max-width: 256px;">
 				<div class="card" >
 					<div class="card-image">
 						<figure class="image is-256x256">

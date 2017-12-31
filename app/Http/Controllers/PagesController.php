@@ -19,7 +19,7 @@ class PagesController extends Controller {
 		$first = "Daisho";
 		$last = "Komiyama";
 		$full = $first . " " . $last;
-		$email = "info@daishodesign.com";
+		$email = "quebec3.com@gmail.com";
 		$data = [];
 		$data['fullname'] = $full;
 		$data['email'] = $email;
@@ -45,7 +45,7 @@ class PagesController extends Controller {
 
 		Mail::send('emails.contact', $data, function($message) use ($data){
 			$message->from($data['email']);
-			$message->to('info@daishodesign.com');
+			$message->to('quebec3.com@gmail.com');
 			// $message->to('smtp.mailtrap.io');
 			$message->subject($data['subject']);
 		});

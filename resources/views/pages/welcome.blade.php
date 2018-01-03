@@ -32,7 +32,7 @@
 
 		<h2 class="title is-size-2 is-size-3-mobile has-text-centered m-b-50">最近の記事</h2>
 		<div class="columns">
-			<div class="column no-side-pad is-12-mobile m-b-30">
+			<div class="column no-side-pad is-9 is-12-mobile m-b-30">
 				@foreach($posts as $post)
 					@if($post->is_online)
 
@@ -45,7 +45,9 @@
 
 							<div class="media-content">
 								<div class="content">
-									<h3 class="m-b-5 is-size-4 is-size-5-mobile">{{ $post->title }}</h3>
+									<a href="{{ route('blog.single', $post->slug) }}">
+										<h3 class="m-b-5 is-size-4 is-size-5-mobile">{{ $post->title }}</h3>
+									</a>
 									<p class="m-b-5 has-text-weight-light is-size-6">{{ date('Y年 n月j日',  strtotime($post->created_at)) }}</p>
 									<p>{{ mb_substr(strip_tags($post->body), 0, 80) }}{{ mb_strlen($post->body) > 80 ? '...' : '' }}</p>
 									<a href="{{ route('blog.single', $post->slug) }}" class="button is-primary">続きを読む</a>

@@ -31,7 +31,7 @@
 							{{ $comment->name or '名無しさん' }}
 						</td>
 						<td>{{ $comment->email }}</td>
-						<td>{{ $comment->post->title }}</td>
+						<td><a href="{{ route('blog.single', $comment->post->slug) }}">{{ $comment->post->title }}</a></td>
 						<td>{{ date('F nS, Y g:iA', strtotime($comment->created_at)) }}</td>
 						<td>{{ $comment->comment }}</td>
 					</tr>

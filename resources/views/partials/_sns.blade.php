@@ -26,6 +26,11 @@
 				<i class="fa fa-thumbs-up is-size-6 m-r-10"></i>海外生活ブログ
 			</a>
 		</div>
+		<div class="m-b-15">
+			<a class="button is-danger is-size-7 has-text-weight-semibold" href="http://blogranking.fc2.com/in.php?id=1027400" target="_blank">
+				<i class="fa fa-thumbs-up is-size-6 m-r-10"></i>FC2 ランキング
+			</a>
+		</div>
 	</div>
 
 	<div class="share-buttons m-t- is-clearfix">

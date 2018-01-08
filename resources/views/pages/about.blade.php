@@ -14,7 +14,7 @@
 <section class="section container">
 	<div class="column no-side-pad is-8-desktop is-offset-2-desktop is-10-tablet is-offset-1-tablet">
 		<div class="format">
-			<p class="is-size-6">Quebec3はカナダのケベック州、モントリオールという街に住む以下の人が好き勝手に書いてるブログです。海外移住、カナダでの暮らし、労働環境、日本のことなんかを歪んだ視点から書いてます。</p>
+			<p class="is-size-6">Quebec3はカナダのケベック州、モントリオールという街に住む管理人が好き勝手に書いてるブログです。海外移住、カナダでの暮らし、労働環境、日本のことなんかを歪んだ視点から書いてます。</p>
 			<hr class="m-b-20">
 			<h3 class="title is-size-4">管理人</h3>
 			<img src="/images/profile-landscape.jpg" alt="Kyoshin-heiのプロファイル">

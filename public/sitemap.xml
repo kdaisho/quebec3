@@ -1,285 +1,298 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-			http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-	<loc>http://quebec3.com/</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>1.00</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/about</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/about</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/contact</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/contact</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/questions-answers-canada</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/international-driving-permit</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/brailler-canada-javascript</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/hobby</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/interview</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/hospital</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/japan</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/questions-answers-canada</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/kaizen</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/brailler-canada-javascript</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/moving-house</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/interview</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.80</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/japanese-nationality</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/japan</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.64</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/divorce-canada</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/kaizen</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.64</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/work-web-canada</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/moving-house</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.64</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/question-answer</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/japanese-nationality</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.64</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog?page=2</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog?page=2</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.64</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog?page=3</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog?page=3</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.64</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog?page=4</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog?page=4</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.64</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog?page=5</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog?page=5</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.64</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/canada-work</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/work-web-canada</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
+	<priority>0.64</priority>
+</url>
+<url>
+	<loc>https://quebec3.com/blog/canada-work</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/montreal-citylife-japanese</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/divorce-canada</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/montreal-canada-job-interview2</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/question-answer</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/montreal-canada-work</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/facebook</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/canada-right-to-vote</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/montreal-japanese</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/facebook</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/treehouse</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/soylent</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/montreal-canada-job-interview2</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/montreal-japanese</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/montreal-canada-job-interview</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/treehouse</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/montreal-canada-work</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/montreal-canada-job-interview</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog?page=1</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/ikea-hack</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/montreal-citylife-japanese</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog?page=1</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/canada-right-to-vote</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/question-immigration-canada</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/ikea-hack</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/soda-stream</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/soylent</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/moving_house_canada2</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/question-immigration-canada</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/moving_house_canada</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/soda-stream</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/montreal_picnic</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/moving_house_canada2</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/canada_shipping2</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/moving_house_canada</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/canada_shipping</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/montreal_picnic</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/canada_couple</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/canada_shipping2</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/speak_english</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/canada_shipping</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/caucasian_asian</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/canada_couple</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/workincanada</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/speak_english</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/worstday</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/caucasian_asian</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/averageday</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/workincanada</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/weather</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/worstday</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/rssfeed</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/averageday</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/firstaid</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/weather</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/haircut</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/rssfeed</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/why_jfood</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/firstaid</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/public_safety</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/haircut</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/about_cars</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/why_jfood</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/ex_army</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/public_safety</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/about_canada</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/about_cars</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/programmer</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/ex_army</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/grocery_china</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/about_canada</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/saving_life</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/programmer</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 <url>
-	<loc>http://quebec3.com/blog/first-post</loc>
-	<lastmod>2017-12-27T23:41:08+00:00</lastmod>
+	<loc>https://quebec3.com/blog/grocery_china</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
+	<priority>0.51</priority>
+</url>
+<url>
+	<loc>https://quebec3.com/blog/saving_life</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
+	<priority>0.51</priority>
+</url>
+<url>
+	<loc>https://quebec3.com/blog/first-post</loc>
+	<lastmod>2018-01-18T02:17:55+00:00</lastmod>
 	<priority>0.51</priority>
 </url>
 </urlset>

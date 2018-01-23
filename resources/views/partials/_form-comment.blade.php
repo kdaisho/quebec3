@@ -10,6 +10,11 @@
 	</div>
 
 	<label for="email" class="label m-t-20"><span class="has-text-danger">*</span>メールアドレス:<span class="is-size-6 is-size-7-mobile no-wrap">（公開されることはありません。）</span></label>
+
+	<div class="control has-icons-left email-extra">
+		{{ Form::text('email_extra', null, ['id' => 'email_extra', 'class' => 'input', 'placeholder' => 'example@gmail.com', 'tabindex' => '-1', 'autocomplete' => 'off']) }}
+	</div>
+
 	<div class="control has-icons-left">
 		{{ Form::text('email', null, ['id' => 'email', 'class' => 'input', 'placeholder' => 'example@gmail.com']) }}
 		<span class="icon is-small is-left">

@@ -33,6 +33,7 @@ class CommentsController extends Controller
 		$this->validate($request, [
 			'name' => 'max:255',
 			'email' => 'required|email|max:255',
+			'email_extra' => 'max:1',
 			'comment' => 'required|min:5|max:2000'
 		]);
 
@@ -41,15 +42,28 @@ class CommentsController extends Controller
 		$comment = new Comment;
 		$comment->name = $request->name;
 		$comment->email = $request->email;
+		// $comment->emailExtra = $request->email_extra;
 		$comment->comment = $request->comment;
-		$comment->approved = true;
-		$comment->post()->associate($post);
 
-		$comment->save();
+		if (!empty($request->email_extra)) {
+			$comment->post()->associate($post);
+			// treat as spambot
+			Session::flash('success', 'スパム認定されました。');
 
-		Session::flash('success', 'コメントupされました。');
+			return redirect()->route('blog.single', [$post->slug]);
+		}
+		else {
+			// process as normal
+		
+			$comment->approved = true;
+			$comment->post()->associate($post);
 
-		return redirect()->route('blog.single', [$post->slug]);
+			$comment->save();
+
+			Session::flash('success', 'コメントupされました。');
+
+			return redirect()->route('blog.single', [$post->slug]);
+		}
 	}
 
 	/**

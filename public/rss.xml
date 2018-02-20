@@ -2,14 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 	<title>Quebec3 - 海外移住ポータル -</title>
-	<link>http://quebec3.com</link>
-	<atom:link href="http://quebec3.com/rss.xml" rel="self" type="application/rss+xml" />
+	<link>https://quebec3.com</link>
+	<atom:link href="https://quebec3.com/rss.xml" rel="self" type="application/rss+xml" />
 	<description>Quebec3は、モントリオール在住のとある日本人により運営されている勝手気ままな個人のブログです。モントリオール/ケベック州での生活ぶりを勝手な視点から書いています。</description>
 	<category>海外移住/モントリオール/海外勤務</category>
 	<item>
+		<title>VRを手に入れる。</title>
+		<link>https://quebec3.com/blog/virtual-reality</link>
+		<guid>https://quebec3.com/blog/virtual-reality</guid>
+		<description>「ぎぃ〜ガチャ、へチョッ」さて、この音はなんでしょう？</description>
+		<pubDate>Wed, 31 Jan 2018 21:10:00 EDT</pubDate>
+		<category>モントリオール</category>
+		<category>海外就職</category>
+		<category>海外生活</category>
+	</item>
+	<item>
 		<title>国境を超えた力を手に入れる</title>
-		<link>http://quebec3.com/blog/international-driving-permit</link>
-		<guid>http://quebec3.com/blog/international-driving-permit</guid>
+		<link>https://quebec3.com/blog/international-driving-permit</link>
+		<guid>https://quebec3.com/blog/international-driving-permit</guid>
 		<description>日本人の皆さんこんにちは、突然ですが、あなたは今年の抱負をきちんと決めましたか？僕はというと、今年こそ国境という概念を超越したスーパーな力を持ってみせると周りに宣言しました。どうやら本気だと思われていないようなので今回思い切って実行に移してみたいと思います。</description>
 		<pubDate>Fri, 5 Jan 2018 21:10:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -18,8 +28,8 @@
 	</item>
 	<item>
 		<title>モントリオールでプラモを買う。</title>
-		<link>http://quebec3.com/blog/hobby</link>
-		<guid>http://quebec3.com/blog/hobby</guid>
+		<link>https://quebec3.com/blog/hobby</link>
+		<guid>https://quebec3.com/blog/hobby</guid>
 		<description>今回は年末年始にも関わらず、相変わらずバタバタと忙しい我が職場からクビ覚悟でお届けします。皆さんにバレると日経平均株価、NASDAQやBitcoin市場に思いもよらぬ影響を与えかねない商品を扱っているため写真の一部にモザイクをかけてあります。</description>
 		<pubDate>Mon, 1 Jan 2018 22:10:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -28,8 +38,8 @@
 	</item>
 	<item>
 		<title>9時間</title>
-		<link>http://quebec3.com/blog/hospital</link>
-		<guid>http://quebec3.com/blog/hospital</guid>
+		<link>https://quebec3.com/blog/hospital</link>
+		<guid>https://quebec3.com/blog/hospital</guid>
 		<description>手術を受けるため本日の午後2時にこの病院を訪れてから、かれこれ9時間待たされている。</description>
 		<pubDate>Thu, 28 Dec 2017 22:10:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -38,8 +48,8 @@
 	</item>
 	<item>
 		<title>カナダ移住にまつわるお金の話</title>
-		<link>http://quebec3.com/blog/questions-answers-canada</link>
-		<guid>http://quebec3.com/blog/questions-answers-canada</guid>
+		<link>https://quebec3.com/blog/questions-answers-canada</link>
+		<guid>https://quebec3.com/blog/questions-answers-canada</guid>
 		<description>こんにちはKyoshinです。今日は、いい感じにたまってきたメッセージに答えていく場にしたいと思います。</description>
 		<pubDate>Sun, 5 Nov 2017 18:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -48,8 +58,8 @@
 	</item>
 	<item>
 		<title>つくってみた：点字タイピング練習サービス</title>
-		<link>http://quebec3.com/blog/brailler-canada-javascript</link>
-		<guid>http://quebec3.com/blog/brailler-canada-javascript</guid>
+		<link>https://quebec3.com/blog/brailler-canada-javascript</link>
+		<guid>https://quebec3.com/blog/brailler-canada-javascript</guid>
 		<description>ここ１ヶ月ほど会社の仕事が忙しくなって、ほぼ毎日のようにちょこちょこ残業している。ここは日本か。</description>
 		<pubDate>Sat, 16 Sep 2017 18:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -58,8 +68,8 @@
 	</item>
 	<item>
 		<title>英語学習している人へ。</title>
-		<link>http://quebec3.com/blog/interview</link>
-		<guid>http://quebec3.com/blog/interview</guid>
+		<link>https://quebec3.com/blog/interview</link>
+		<guid>https://quebec3.com/blog/interview</guid>
 		<description>先日、扇風機抱きながらぼーっとしてたら日本からインタビューの依頼が来た。Englyという英語学習方法・教材を紹介するサービスからだ。まぁ暇なので受けてみた...</description>
 		<pubDate>Sat, 29 Jul 2017 18:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -68,8 +78,8 @@
 	</item>
 	<item>
 		<title>人の命が軽過ぎる日本</title>
-		<link>http://quebec3.com/blog/japan</link>
-		<guid>http://quebec3.com/blog/japan</guid>
+		<link>https://quebec3.com/blog/japan</link>
+		<guid>https://quebec3.com/blog/japan</guid>
 		<description>先日、何気なく日本のニュース記事なんかをパラパラ読んでて感じたことがある。まぁモントリオールに住み始めて以来なんとなく感じてた事なのだが、やっぱりあれだ、日本では人の命が軽過ぎる。実に軽い。羽毛のように軽い...</description>
 		<pubDate>Sun, 7 May 2017 18:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -77,8 +87,8 @@
 	</item>
 	<item>
 		<title>一人で業務改善をやる無意味さ</title>
-		<link>http://quebec3.com/blog/kaizen</link>
-		<guid>http://quebec3.com/blog/kaizen</guid>
+		<link>https://quebec3.com/blog/kaizen</link>
+		<guid>https://quebec3.com/blog/kaizen</guid>
 		<description>ちょっと前のことだったと思うが、この街を歩いていたらKaizenという名の寿司バーを見かけた。もうとっくに潰れているらしいそのレストランはその名から、トヨタ生産方式「カイゼン」という言葉が日本から一万キロ以上離れたカナダ東部においてまで知れ渡っていることを示唆しているように見えるが...</description>
 		<pubDate>Sun, 12 Mar 2017 18:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -86,8 +96,8 @@
 	</item>
 	<item>
 		<title>こそこそ引越し中</title>
-		<link>http://quebec3.com/blog/moving-house</link>
-		<guid>http://quebec3.com/blog/moving-house</guid>
+		<link>https://quebec3.com/blog/moving-house</link>
+		<guid>https://quebec3.com/blog/moving-house</guid>
 		<description>実は最近引越しした。カナダに来て以来4回目の引越しになる。相も変わらず今回もモントリオール内での引越しだ。まぁ僕はそろそろ40歳になるのだが、日本で大学を卒業し就職をして以来、一箇所に2年以上腰を落ち着けて生活した記憶がこれっぽっちもない。どうみても最長2年がいいところだ。いつの日かこの引越し地獄から逃れて腰を落ち着かせて一箇所に住み続けるという生活をしてみたいものだ。</description>
 		<pubDate>Sun, 12 Feb 2017 18:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -95,8 +105,8 @@
 	</item>
 	<item>
 		<title>日本国籍を捨てる方法</title>
-		<link>http://quebec3.com/blog/japanese-nationality</link>
-		<guid>http://quebec3.com/blog/japanese-nationality</guid>
+		<link>https://quebec3.com/blog/japanese-nationality</link>
+		<guid>https://quebec3.com/blog/japanese-nationality</guid>
 		<description>国籍捨てられるんなら捨ててみようと思った。世界的にみても合法的に放棄できる国って貴重だ。自分のこと棚に上げて言うけど日本は国籍を一体なんだと思ってんだろね。</description>
 		<pubDate>Fri, 20 Jan 2017 19:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -104,8 +114,8 @@
 	</item>
 	<item>
 		<title>カナダから離婚届を日本に出す方法</title>
-		<link>http://quebec3.com/blog/divorce-canada</link>
-		<guid>http://quebec3.com/blog/divorce-canada</guid>
+		<link>https://quebec3.com/blog/divorce-canada</link>
+		<guid>https://quebec3.com/blog/divorce-canada</guid>
 		<description>今日はカナダから離婚届を出す方法についてでも書きましょかね。katakatakata...</description>
 		<pubDate>Fri, 18 Nov 2016 20:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -113,8 +123,8 @@
 	</item>
 	<item>
 		<title>成長が見込めるキャリアを持ちたい。たとえ外国でも。</title>
-		<link>http://quebec3.com/blog/work-web-canada</link>
-		<guid>http://quebec3.com/blog/work-web-canada</guid>
+		<link>https://quebec3.com/blog/work-web-canada</link>
+		<guid>https://quebec3.com/blog/work-web-canada</guid>
 		<description>カナダに渡った後になって、この国でどういうキャリア形成をしていくのがベストなのか真剣に考え始める日本人は結構多い。最初はワーホリなんかを使ってほぼ勢いで来たけど、彼氏/彼女ができちゃった等の理由で計画していた期間よりずぅーっと長く滞在することになる日本人は結構いる。そうなってくると真剣に考え出さなきゃいけないのが仕事の選び方だ。</description>
 		<pubDate>Thu, 27 Oct 2016 20:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -122,8 +132,8 @@
 	</item>
 	<item>
 		<title>読者からの質問 - Aさんの場合</title>
-		<link>http://quebec3.com/blog/question-answer</link>
-		<guid>http://quebec3.com/blog/question-answer</guid>
+		<link>https://quebec3.com/blog/question-answer</link>
+		<guid>https://quebec3.com/blog/question-answer</guid>
 		<description>今日は読者の一人からの質問にこの場を借りて答えるよ。過去にも似たような質問を何回か受けたんで、まとめの意味も含めここで答えちゃおうと思う。</description>
 		<pubDate>Fri, 10 Jun 2016 22:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -131,8 +141,8 @@
 	</item>
 	<item>
 		<title>Facebookを通じて眺める世界は美しいだろ、Huh?</title>
-		<link>http://quebec3.com/blog/facebook</link>
-		<guid>http://quebec3.com/blog/facebook</guid>
+		<link>https://quebec3.com/blog/facebook</link>
+		<guid>https://quebec3.com/blog/facebook</guid>
 		<description>Facebookは健康に悪い。最近気付いた。Facebookは、自分がいかに充実したライフを送っているかを他人の投稿から相対的に計り、そして競い合うため場所だ。有名人じゃなくても参加できるアマチュアの祭典。</description>
 		<pubDate>Fri, 6 May 2016 00:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -140,8 +150,8 @@
 	</item>
 	<item>
 		<title>最近のこと。</title>
-		<link>http://quebec3.com/blog/montreal-japanese</link>
-		<guid>http://quebec3.com/blog/montreal-japanese</guid>
+		<link>https://quebec3.com/blog/montreal-japanese</link>
+		<guid>https://quebec3.com/blog/montreal-japanese</guid>
 		<description>4月の中旬にもなるとさすがに暖かくなってきた。今日なんかTシャツで出歩いてもちょっと汗ばむくらいだよ。モントリオールにもようやく春が来たんだわ。間違いなくこのブログのせいなんだろうけど、ここ最近、街中で突然日本人に話しかけられることがちょくちょく起こるようになった。</description>
 		<pubDate>Mon, 18 Apr 2016 00:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -149,8 +159,8 @@
 	</item>
 	<item>
 		<title>オンラインでプログラミングを学ぶ Treehouse</title>
-		<link>http://quebec3.com/blog/treehouse</link>
-		<guid>http://quebec3.com/blog/treehouse</guid>
+		<link>https://quebec3.com/blog/treehouse</link>
+		<guid>https://quebec3.com/blog/treehouse</guid>
 		<description>カナダを含めた北米一帯ではここ数年オンラインスクール市場がここ数年でもの凄い伸びを示している。僕がちょっと思い出すだけでも質の良さそうなやつが7, 8個はある。最近この手のオンラインスクールが人気を集め優秀な生徒を世に送り出してる。特にWeb関連の職場でさ。</description>
 		<pubDate>Thu, 17 Mar 2016 00:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -158,8 +168,8 @@
 	</item>
 	<item>
 		<title>面接行ってきた２</title>
-		<link>http://quebec3.com/blog/montreal-canada-job-interview2</link>
-		<guid>http://quebec3.com/blog/montreal-canada-job-interview2</guid>
+		<link>https://quebec3.com/blog/montreal-canada-job-interview2</link>
+		<guid>https://quebec3.com/blog/montreal-canada-job-interview2</guid>
 		<description>面接行ってきた１の続きです。現在までのところ42社に履歴書送って面接まで行き着けたのはたったの４つだ。僕の場合は10％の割合で面接が受けられるらしい。</description>
 		<pubDate>Thu, 3 Mar 2016 00:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -167,8 +177,8 @@
 	</item>
 	<item>
 		<title>面接行ってきた１</title>
-		<link>http://quebec3.com/blog/montreal-canada-job-interview</link>
-		<guid>http://quebec3.com/blog/montreal-canada-job-interview</guid>
+		<link>https://quebec3.com/blog/montreal-canada-job-interview</link>
+		<guid>https://quebec3.com/blog/montreal-canada-job-interview</guid>
 		<description>僕は今年の初めから職探しをしてるんだけど、なかなかどこにも引っかからないんだ。一応これまで履歴書送りつけた会社名を（同じ会社に重複して送ることがないように）メモに残しているんだけど、先日数えてみたらこの2ヶ月間で計42社に履歴書を送ってた。「モントリオール市内だけでも結構な数のウェブ関連職があるってことだなぁー。」なんて他人事のようにつぶやいてみる。</description>
 		<pubDate>Wed, 17 Feb 2016 00:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -176,8 +186,8 @@
 	</item>
 	<item>
 		<title>モントリオール/カナダの就職事情</title>
-		<link>http://quebec3.com/blog/montreal-canada-work</link>
-		<guid>http://quebec3.com/blog/montreal-canada-work</guid>
+		<link>https://quebec3.com/blog/montreal-canada-work</link>
+		<guid>https://quebec3.com/blog/montreal-canada-work</guid>
 		<description>さていい加減たっぷり休んだし、本格的に仕事探すか。無職になってから早くも一ヶ月が経つ。今回はカナダ、モントリオールでの就職状況について書こうかな。katakatakatakata...</description>
 		<pubDate>Fri, 22 Jan 2016 00:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -185,8 +195,8 @@
 	</item>
 	<item>
 		<title>会社潰れたんだけど</title>
-		<link>http://quebec3.com/blog/canada-work</link>
-		<guid>http://quebec3.com/blog/canada-work</guid>
+		<link>https://quebec3.com/blog/canada-work</link>
+		<guid>https://quebec3.com/blog/canada-work</guid>
 		<description>僕の仕事はこのところ凄く忙しい。あまりにタスクが多く過ぎて毎日ギリギリのところでやりくりしてる感じだ。</description>
 		<pubDate>Sun, 13 Dec 2015 00:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -194,8 +204,8 @@
 	</item>
 	<item>
 		<title>とある日本人の日常 - モントリオール</title>
-		<link>http://quebec3.com/blog/montreal-citylife-japanese</link>
-		<guid>http://quebec3.com/blog/montreal-citylife-japanese</guid>
+		<link>https://quebec3.com/blog/montreal-citylife-japanese</link>
+		<guid>https://quebec3.com/blog/montreal-citylife-japanese</guid>
 		<description>日本の皆さんこんちは。ここ最近やったことでも書きましょかね。ふと思ったんで書き殴ってみる。katakatakatakatakata...</description>
 		<pubDate>Wed, 2 Dec 2015 00:00:00 EDT</pubDate>
 		<category>モントリオール</category>
@@ -203,8 +213,8 @@
 	</item>
 	<item>
 		<title>外国人と参政権と市民権</title>
-		<link>http://quebec3.com/blog/canada-right-to-vote</link>
-		<guid>http://quebec3.com/blog/canada-right-to-vote</guid>
+		<link>https://quebec3.com/blog/canada-right-to-vote</link>
+		<guid>https://quebec3.com/blog/canada-right-to-vote</guid>
 		<description>ここカナダでは、選挙が始まる数ヶ月も前からもうテレビ、ラジオ等のマスメディアはその手の話題でいっぱいになっていた。僕が現在身を置くこんな小さな会社ですら「次の総理はあいつがいい。」とか、「こいつはダメだ。」とかいう話題が聞こえ始めるんだから、こりゃもうカナダ人は総じて政治、少なくとも選挙自体に強い関心を持っていると言えるのだろう。まぁそりゃそうだ、総理大臣が変わるだけでその年から生活がガラッと変化しちゃうのだから。</description>
 		<pubDate>Sat, 24 Oct 2015 00:00:00 EDT</pubDate>
 		<category>選挙</category>
@@ -212,8 +222,8 @@
 	</item>
 	<item>
 		<title>IKEA hack - PC スクリーン台を作る -</title>
-		<link>http://quebec3.com/blog/ikea-hack</link>
-		<guid>http://quebec3.com/blog/ikea-hack</guid>
+		<link>https://quebec3.com/blog/ikea-hack</link>
+		<guid>https://quebec3.com/blog/ikea-hack</guid>
 		<description>僕が家で使っているマシンは2014年のMacbook Pro。メモリも16GBあってSSDだしで十分パワフルなんだけど、やっぱノートブックだけあって画面が小さいんだよね。そこで外部のスクリーンを使ってたんだ。</description>
 		<pubDate>Sun, 11 Oct 2015 00:00:00 EDT</pubDate>
 		<category>mac</category>
@@ -221,8 +231,8 @@
 	</item>
 	<item>
 		<title>食べるのやめてみた - Soylent -</title>
-		<link>http://quebec3.com/blog/soylent</link>
-		<guid>http://quebec3.com/blog/soylent</guid>
+		<link>https://quebec3.com/blog/soylent</link>
+		<guid>https://quebec3.com/blog/soylent</guid>
 		<description>突然だけど、僕はもう2週間飯を食べていない。「飯」って言っても別に「米」の話じゃなくて「食事」のこと。2週間まともに食事をとってないんだ。</description>
 		<pubDate>Mon, 7 Sep 2015 00:00:00 EDT</pubDate>
 		<category>食事</category>
@@ -230,8 +240,8 @@
 	</item>
 	<item>
 		<title>カナダに移住する方法 - Q &amp; A -</title>
-		<link>http://quebec3.com/blog/question-immigration-canada</link>
-		<guid>http://quebec3.com/blog/question-immigration-canada</guid>
+		<link>https://quebec3.com/blog/question-immigration-canada</link>
+		<guid>https://quebec3.com/blog/question-immigration-canada</guid>
 		<description>最近、とある読者からカナダに移住することについて質問が届いた。実はこの手の質問は過去にも数回ほど受け取ったことがあるのでもう、この場を借りて答えちゃおうと思う。</description>
 		<pubDate>Sat, 29 Aug 2015 00:00:00 EDT</pubDate>
 		<category>カナダ就職</category>
@@ -239,8 +249,8 @@
 	</item>
 	<item>
 		<title>炭酸水を自宅で作るメリット - SodaStream -</title>
-		<link>http://quebec3.com/blog/soda-stream</link>
-		<guid>http://quebec3.com/blog/soda-stream</guid>
+		<link>https://quebec3.com/blog/soda-stream</link>
+		<guid>https://quebec3.com/blog/soda-stream</guid>
 		<description>僕は炭酸飲料が好きだ。といっても別に甘いものが特に好きなわけではない。ここカナダのソフトドリンク市場には僕の希望に反して砂糖が微塵も含まれていない清涼飲料水など一部の例外を除き存在しない。</description>
 		<pubDate>Sat, 22 Aug 2015 00:00:00 EDT</pubDate>
 		<category>炭酸飲料</category>
@@ -248,8 +258,8 @@
 	</item>
 	<item>
 		<title>引越し完了</title>
-		<link>http://quebec3.com/blog/moving_house_canada2</link>
-		<guid>http://quebec3.com/blog/moving_house_canada2</guid>
+		<link>https://quebec3.com/blog/moving_house_canada2</link>
+		<guid>https://quebec3.com/blog/moving_house_canada2</guid>
 		<description>朝一でトラックレンタルして、ビアンカにも手伝ってもらって午前中のうちにさらっと終了。土曜日だった。</description>
 		<pubDate>Sun, 16 Aug 2015 00:00:00 EDT</pubDate>
 		<category>引越し</category>
@@ -257,8 +267,8 @@
 	</item>
 	<item>
 		<title>引越しはなぜこうも面倒なのか</title>
-		<link>http://quebec3.com/blog/moving_house_canada</link>
-		<guid>http://quebec3.com/blog/moving_house_canada</guid>
+		<link>https://quebec3.com/blog/moving_house_canada</link>
+		<guid>https://quebec3.com/blog/moving_house_canada</guid>
 		<description>引越しだ。面倒くせぇー。この度、まぁ8月の頭にKyoshinは引越しをすることになりました。</description>
 		<pubDate>Mon, 27 Jul 2015 00:00:00 EDT</pubDate>
 		<category>引越し</category>
@@ -266,8 +276,8 @@
 	</item>
 	<item>
 		<title>モントリオールでのピクニック</title>
-		<link>http://quebec3.com/blog/montreal_picnic</link>
-		<guid>http://quebec3.com/blog/montreal_picnic</guid>
+		<link>https://quebec3.com/blog/montreal_picnic</link>
+		<guid>https://quebec3.com/blog/montreal_picnic</guid>
 		<description>週末机に向かってるのも体に悪いってことで、彼女と二人でクソ暑い中ピクニックに出かけてみた。場所はモントリオールの北にあるParc-nature du Ruisseau-De Montignyって名の比較的小さな自然公園だ。</description>
 		<pubDate>Sat, 18 Jul 2015 00:00:00 EDT</pubDate>
 		<category>Bento</category>
@@ -275,8 +285,8 @@
 	</item>
 	<item>
 		<title>なぜカナダの運送会社はこうも酷いのか２</title>
-		<link>http://quebec3.com/blog/canada_shipping2</link>
-		<guid>http://quebec3.com/blog/canada_shipping2</guid>
+		<link>https://quebec3.com/blog/canada_shipping2</link>
+		<guid>https://quebec3.com/blog/canada_shipping2</guid>
 		<description>日本の皆さんこんばんは。「なぜカナダの運送会社はこうもひどいのか」の続きです。最終的になんとか形になったので今回で締めくくろうと思うよ。</description>
 		<pubDate>Thu, 25 Jun 2015 00:00:00 EDT</pubDate>
 		<category>買い物</category>
@@ -284,8 +294,8 @@
 	</item>
 	<item>
 		<title>なぜカナダの運送会社はこうも酷いのか</title>
-		<link>http://quebec3.com/blog/canada_shipping</link>
-		<guid>http://quebec3.com/blog/canada_shipping</guid>
+		<link>https://quebec3.com/blog/canada_shipping</link>
+		<guid>https://quebec3.com/blog/canada_shipping</guid>
 		<description>日本の皆さんこんにちは。カナダに住み始めて5年。ようやく本日になって確信した。カナダの運送会社は総じて...</description>
 		<pubDate>Wed, 24 Jun 2015 00:00:00 EDT</pubDate>
 		<category>買い物</category>
@@ -293,8 +303,8 @@
 	</item>
 	<item>
 		<title>カナダの恋愛事情</title>
-		<link>http://quebec3.com/blog/canada_couple</link>
-		<guid>http://quebec3.com/blog/canada_couple</guid>
+		<link>https://quebec3.com/blog/canada_couple</link>
+		<guid>https://quebec3.com/blog/canada_couple</guid>
 		<description>大変なことが起きた。今朝、通勤のバスを降りたところ、ちょんちょんと僕の肩を後ろから叩く人が。振り返るとそこには見知らぬ若い女性。</description>
 		<pubDate>Sat, 6 Jun 2015 00:00:00 EDT</pubDate>
 		<category>結婚</category>
@@ -302,8 +312,8 @@
 	</item>
 	<item>
 		<title>英語を学ぶ最大の理由</title>
-		<link>http://quebec3.com/blog/speak_english</link>
-		<guid>http://quebec3.com/blog/speak_english</guid>
+		<link>https://quebec3.com/blog/speak_english</link>
+		<guid>https://quebec3.com/blog/speak_english</guid>
 		<description>なんだか久しぶりに書く。最近ちょっと忙しくてさ。先週また新しい学校始めちゃったんだ。去年の12月にwebデザインの学校を卒業したばかりなんだけど…。というのも、最近仕事でコード書く機会とその重要性がちょいと大きくなってきて…馴染みのない言語でもウンウン唸りながらキーボード叩いたり、同僚のプログラマーに助けを求めたりなんかしつつ、まあそれなりに楽しくやって来たんだけど、もう限界だよね。</description>
 		<pubDate>Sat, 30 May 2015 00:00:00 EDT</pubDate>
 		<category>英語</category>
@@ -311,8 +321,8 @@
 	</item>
 	<item>
 		<title>世界を切り開く白人と文句を言わないアジア人</title>
-		<link>http://quebec3.com/blog/caucasian_asian</link>
-		<guid>http://quebec3.com/blog/caucasian_asian</guid>
+		<link>https://quebec3.com/blog/caucasian_asian</link>
+		<guid>https://quebec3.com/blog/caucasian_asian</guid>
 		<description>今日もプール行ってきた。しかし最近のプールは混んでいる。暖かくなったせいだろうか、最近僕が足繁く通う市民プールは平日とはいえ、夜のこの時間にもなると涼を求める人々でごった返すことがたまにある。この比較的大きな温水プール、モントリオール市民には年を通じて無料開放なのだ。暑くなれば混むのも理解できる。</description>
 		<pubDate>Sat, 23 May 2015 00:00:00 EDT</pubDate>
 		<category>文化の相違</category>
@@ -320,8 +330,8 @@
 	</item>
 	<item>
 		<title>カナダで働くことは幸せなのか？</title>
-		<link>http://quebec3.com/blog/workincanada</link>
-		<guid>http://quebec3.com/blog/workincanada</guid>
+		<link>https://quebec3.com/blog/workincanada</link>
+		<guid>https://quebec3.com/blog/workincanada</guid>
 		<description>はー今日もなんとか仕事終わった。バス乗るぞー。通勤で毎日使うバス。暖かくなると自転車で通勤する輩が増えるためだろうか、最近特に空席が目立つようになった。珍しく窓際に座ってぼーっとモントリオールの街並みを眺める。空はまだまだ明るい。今日はカナダでの労働環境について書こう。</description>
 		<pubDate>Sat, 16 May 2015 18:00:00 EDT</pubDate>
 		<category>海外の労働環境</category>
@@ -329,8 +339,8 @@
 	</item>
 	<item>
 		<title>ファ◯◯な1日</title>
-		<link>http://quebec3.com/blog/worstday</link>
-		<guid>http://quebec3.com/blog/worstday</guid>
+		<link>https://quebec3.com/blog/worstday</link>
+		<guid>https://quebec3.com/blog/worstday</guid>
 		<description>おお、頭痛ぇ。見慣れない柄の天井が視界に入って飛び起きる。良かった。自分の家だ。もう朝の10時。</description>
 		<pubDate>Mon, 11 May 2015 18:00:00 EDT</pubDate>
 		<category>海外の日常</category>
@@ -338,8 +348,8 @@
 	</item>
 	<item>
 		<title>平凡な1日</title>
-		<link>http://quebec3.com/blog/averageday</link>
-		<guid>http://quebec3.com/blog/averageday</guid>
+		<link>https://quebec3.com/blog/averageday</link>
+		<guid>https://quebec3.com/blog/averageday</guid>
 		<description>朝9時、職場のドアを開ける。焦げたマザーボードの匂いが染み付いたオフィス。空っぽのショルダーバックをオフィスの片隅にぶん投げ、しょうもないデッサン画とチリ紙で埋め尽くされた机に向かう。</description>
 		<pubDate>Thu, 7 May 2015 18:00:00 EDT</pubDate>
 		<category>海外の日常</category>
@@ -347,8 +357,8 @@
 	</item>
 	<item>
 		<title>モントリオールの気候</title>
-		<link>http://quebec3.com/blog/weather</link>
-		<guid>http://quebec3.com/blog/weather</guid>
+		<link>https://quebec3.com/blog/weather</link>
+		<guid>https://quebec3.com/blog/weather</guid>
 		<description>今日モントリオールは暑かった。最高気温27度。5月になったばかりだというのに感覚的にはもう夏だ。モントリオールの緯度は札幌市のそれより高いのであるが、8月にもなると気温がぐんと上がって頻繁に36度とか38度とかになっちゃうんだ。気温だけみると東京並だ。</description>
 		<pubDate>Tue, 5 May 2015 18:00:00 EDT</pubDate>
 		<category>気候</category>
@@ -356,8 +366,8 @@
 	</item>
 	<item>
 		<title>ブログ村ランキングでRSSが認識されない場合の対処法</title>
-		<link>http://quebec3.com/blog/rssfeed</link>
-		<guid>http://quebec3.com/blog/rssfeed</guid>
+		<link>https://quebec3.com/blog/rssfeed</link>
+		<guid>https://quebec3.com/blog/rssfeed</guid>
 		<description>最近、ブログを書くことが週の日課（週課？）となりつつあるKyoshinであるが、より多くの読者獲得のため、「ブログ村ランキング」なるものに参加することにした。調子に乗ってちょくちょくサイトを訪れているとなにやら一通の警告が届いているではないか。</description>
 		<pubDate>Sun, 3 May 2015 18:00:00 EDT</pubDate>
 		<category>ブログ</category>
@@ -365,8 +375,8 @@
 	</item>
 	<item>
 		<title>カナダの救急車事情など</title>
-		<link>http://quebec3.com/blog/firstaid</link>
-		<guid>http://quebec3.com/blog/firstaid</guid>
+		<link>https://quebec3.com/blog/firstaid</link>
+		<guid>https://quebec3.com/blog/firstaid</guid>
 		<description>この間、会社の命令で救急法の講習に参加してきたんで、そのことでも書こうかなと思う。ここカナダでは法律により、法人はその規模にかかわらず、救急法（心肺蘇生法など）ができる従業員を必ず職場に置かなければならないのだ。</description>
 		<pubDate>Sat, 25 Apr 2015 13:00:00 EDT</pubDate>
 		<category>海外勤務</category>
@@ -374,8 +384,8 @@
 	</item>
 	<item>
 		<title>海外で散髪に行くことについて</title>
-		<link>http://quebec3.com/blog/haircut</link>
-		<guid>http://quebec3.com/blog/haircut</guid>
+		<link>https://quebec3.com/blog/haircut</link>
+		<guid>https://quebec3.com/blog/haircut</guid>
 		<description>僕が髪を切るのにわざわざチャイナタウンまで出かける理由は、もちろん安いからというのもあるが、なんといっても彼らがアジア人だから。</description>
 		<pubDate>Sun, 19 Apr 2015 13:00:00 EDT</pubDate>
 		<category>海外生活</category>
@@ -383,8 +393,8 @@
 	</item>
 	<item>
 		<title>なぜ日本食はこんなにも人気なのか</title>
-		<link>http://quebec3.com/blog/why_jfood</link>
-		<guid>http://quebec3.com/blog/why_jfood</guid>
+		<link>https://quebec3.com/blog/why_jfood</link>
+		<guid>https://quebec3.com/blog/why_jfood</guid>
 		<description>僕がカナダに住み始めて以来ずーっと「日本食」が熱い。周りは日本好きな友人が特に多いため、僕の周りだけで起こっている特殊な事象だと高をくくっていたのだが、どうやらなんか違うことを最近発見した。</description>
 		<pubDate>Fri, 10 Apr 2015 13:00:00 EDT</pubDate>
 		<category>海外移住</category>
@@ -392,8 +402,8 @@
 	</item>
 	<item>
 		<title>カナダは治安良い？</title>
-		<link>http://quebec3.com/blog/public_safety</link>
-		<guid>http://quebec3.com/blog/public_safety</guid>
+		<link>https://quebec3.com/blog/public_safety</link>
+		<guid>https://quebec3.com/blog/public_safety</guid>
 		<description>ちょっとこの間、うちのご近所さんが空き巣にやられそうになった。空き巣が試みた侵入経路は死角の多い家の裏口。今回は幸いにも未遂で済んだが、それでもドアの一部はぶっ壊されっちゃって面倒臭い事になってるし、またそれ以上に家に侵入しようとした輩がいたなんて考えただけで嫌な気分になる。</description>
 		<pubDate>Sat, 4 Apr 2015 13:00:00 EDT</pubDate>
 		<category>海外移住</category>
@@ -401,8 +411,8 @@
 	</item>
 	<item>
 		<title>カナダで車に関して合理的な5つのこと</title>
-		<link>http://quebec3.com/blog/about_cars</link>
-		<guid>http://quebec3.com/blog/about_cars</guid>
+		<link>https://quebec3.com/blog/about_cars</link>
+		<guid>https://quebec3.com/blog/about_cars</guid>
 		<description>今日は、カナダと日本の車事情の違いについてチョロっとキーボード叩こうかと思います。katakatakatakata</description>
 		<pubDate>Mon, 30 Mar 2015 13:00:00 EDT</pubDate>
 		<category>海外移住</category>
@@ -410,8 +420,8 @@
 	</item>
 	<item>
 		<title>元陸自幹部だけど質問ある？</title>
-		<link>http://quebec3.com/blog/ex_army</link>
-		<guid>http://quebec3.com/blog/ex_army</guid>
+		<link>https://quebec3.com/blog/ex_army</link>
+		<guid>https://quebec3.com/blog/ex_army</guid>
 		<description>最近、有事法制がどうのこうのってなんだが日本は熱い。こちらカナダでも内閣がやろうとしていることが稀に新聞の小さな欄に掲載されるよ。憲法は改正されるのか、自衛隊がようやく軍隊としての役割を果たす日が来るのか。こちらでカナダ人に垂れ流される日本のニュースは大手メディア経由なんできっちり中立なんだけど、少なくとも否定的にはとらえられてないようだ。まぁ実際多くのカナダ人は日本のことに興味無い。</description>
 		<pubDate>Fri, 27 Mar 2015 13:00:00 EDT</pubDate>
 		<category>海外から見た日本</category>
@@ -419,29 +429,29 @@
 	</item>
 	<item>
 		<title>カナダについて良いと思える5つの事</title>
-		<link>http://quebec3.com/blog/about_canada</link>
-		<guid>http://quebec3.com/blog/about_canada</guid>
+		<link>https://quebec3.com/blog/about_canada</link>
+		<guid>https://quebec3.com/blog/about_canada</guid>
 		<description>カナダに住んで5年も経つと色々良いところも悪いところも見えてくるものだ。カナダでの生活で僕なりに気に入っている点について触れていこうと思う。</description>
 		<pubDate>Tue, 17 Mar 2015 13:00:00 EDT</pubDate>
 	</item>
 	<item>
 		<title>プログラマーがやってきた。</title>
-		<link>http://quebec3.com/blog/programmer</link>
-		<guid>http://quebec3.com/blog/programmer</guid>
+		<link>https://quebec3.com/blog/programmer</link>
+		<guid>https://quebec3.com/blog/programmer</guid>
 		<description>最実は今日の今日までプログラマーがいなかったんだ。Web関連の会社なのにその本職のプログラマーが一人もいないって結構凄いことなんだけど、僕がなんとかやり繰りしようと（会社側もさせようと）してた。でも飽くまでWebデザイナーである僕が出来ることにはやっぱり限界がある。</description>
 		<pubDate>Fri, 13 Mar 2015 13:00:00 EDT</pubDate>
 	</item>
 	<item>
 		<title>中国に行ってみた。</title>
-		<link>http://quebec3.com/blog/grocery_china</link>
-		<guid>http://quebec3.com/blog/grocery_china</guid>
+		<link>https://quebec3.com/blog/grocery_china</link>
+		<guid>https://quebec3.com/blog/grocery_china</guid>
 		<description>この間彼女とちょっくら中国に行ってきたんでちょっと日記でも書こうかな。中国って言ってもカナダの中にある中国、中華食材店のことだ。僕らの認識では、あの独特の空間は中国人による中国人のための中国食材店、紛れもない中国なのだ。</description>
 		<pubDate>Thu, 12 Mar 2015 13:00:00 EDT</pubDate>
 	</item>
 	<item>
 		<title>カナダで人を救ってみた。</title>
-		<link>http://quebec3.com/blog/saving_life</link>
-		<guid>http://quebec3.com/blog/saving_life</guid>
+		<link>https://quebec3.com/blog/saving_life</link>
+		<guid>https://quebec3.com/blog/saving_life</guid>
 		<description>こ当時Kyoshinは警備員として某ショッピングモールで勤務中。まぁ2年ほど警備員をやっているともう毎日のように、誰かが倒れたーだの、ホームレスが寝てるーだの、店先でアイスバケットチャレンジやってる奴が居るーなんていった類のことが降りかかってくるんだけど、流石に呼吸停止状態の奴は初めて見た。</description>
 		<pubDate>Mon, 9 Mar 2015 13:00:00 EDT</pubDate>
 	</item>

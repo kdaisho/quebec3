@@ -29,6 +29,10 @@
 		</p>
 	</div>
 
+	<div class="control has-icons-left email-extra">
+		{{ Form::text('email_extra', null, ['id' => 'email_extra', 'class' => 'input', 'placeholder' => 'example@gmail.com', 'tabindex' => '-1', 'autocomplete' => 'off']) }}
+	</div>
+
 	<label class="label m-t-20" for="message" name="message">メッセージ:</label>
 	<div class="control has-icons-left">
 		<textarea id="message" name="message" class="textarea" rows="7"></textarea>

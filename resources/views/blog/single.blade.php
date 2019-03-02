@@ -4,6 +4,7 @@
 @section('title', "| $titleTag")
 
 <?php $desc = ""; ?>
+<?php $featuredImage = (isset($post->image)) ? asset('images/' . $post->slug . '/' . $post->image).'-original' : asset('images/' . 'quebe3-hero'); ?>
 
 @foreach($post->tags as $tag)
 	<?php $desc .=  $tag->name .', '; ?>
@@ -15,7 +16,7 @@
 	<meta property="og:url" content="{{ url()->current() }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:description" content="{{ mb_substr(strip_tags($post->body), 0, 50) }}" />
-	<meta property="og:image" content="{{ asset('images/' . $post->slug . '/' . $post->image) }}-original.jpg" />
+	<meta property="og:image" content="{{ $featuredImage }}.jpg" />
 	<meta property="og:image:width" content="400" />
 @endsection
 

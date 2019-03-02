@@ -4,7 +4,7 @@
 @section('title', "| $titleTag")
 
 <?php $desc = ""; ?>
-<?php $featuredImage = (isset($post->image)) ? asset('images/' . $post->slug . '/' . $post->image).'-original' : asset('images/' . 'quebe3-hero'); ?>
+<?php $featuredImage = (isset($post->image)) ? asset('images/' . $post->slug . '/' . $post->image).'-original' : asset('images/' . 'quebec-og'); ?>
 
 @foreach($post->tags as $tag)
 	<?php $desc .=  $tag->name .', '; ?>
